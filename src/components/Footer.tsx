@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, MessageCircle } from "lucide-react";
-import bakeryLogo from "@/assets/bakery-logo.jpg";
+import bakeryLogo from "@/assets/bakery-logo.png";
 
 const Footer = () => (
   <footer className="section-padding bg-card border-t border-border">
