@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="container-narrow">
       <div className="grid md:grid-cols-3 gap-12 mb-12">
         <div>
-          <img src={bakeryLogo} alt="Kelly's Baking Stories" className="h-10 w-auto mb-4" />
+          <img src={bakeryLogo} alt="Kelly's Baking Stories" className="h-12 w-auto object-contain mb-4" />
           <p className="body-text text-sm">
             Crafting stories, one cake at a time. Every dessert is handmade with love, 
             premium ingredients, and a sprinkle of magic.
