@@ -45,7 +45,7 @@ const Contact = () => (
             <div>
               <h3 className="font-serif text-lg mb-1">Instagram</h3>
               <p className="body-text text-sm">Follow us for daily inspiration, new creations, and behind-the-scenes moments.</p>
-              <p className="text-sm font-sans font-medium text-primary mt-2">@kellysbakingstories →</p>
+              <p className="text-sm font-sans font-medium text-primary mt-2">@Kellys_baking_stories →</p>
             </div>
           </a>
 
