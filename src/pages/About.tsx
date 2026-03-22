@@ -19,7 +19,7 @@ const About = () => (
     <section className="section-padding pt-0">
       <div className="container-narrow grid md:grid-cols-2 gap-16 items-center">
         <div className="aspect-[3/4] rounded-2xl overflow-hidden">
-          <img src={founderImg} alt="Kelly, the founder" className="w-full h-full object-cover" />
+          <img src={kellyImg} alt="Kelly, the founder" className="w-full h-full object-cover" />
         </div>
         <div className="space-y-6">
           <h2 className="heading-lg">Meet Kelly</h2>
