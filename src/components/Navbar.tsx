@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import bakeryLogo from "@/assets/bakery-logo.jpg";
+import bakeryLogo from "@/assets/bakery-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
