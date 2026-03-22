@@ -18,7 +18,7 @@ const Contact = () => (
         {/* Contact cards */}
         <div className="space-y-6">
           <a
-            href="https://wa.me/1234567890?text=Hi%20Kelly!"
+            href="https://wa.me/918799055079?text=Hi%20Kelly!"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-5 bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-colors group"
@@ -34,7 +34,7 @@ const Contact = () => (
           </a>
 
           <a
-            href="https://instagram.com/kellysbakingstories"
+            href="https://instagram.com/Kellys_baking_stories"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-5 bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-colors group"
@@ -45,7 +45,7 @@ const Contact = () => (
             <div>
               <h3 className="font-serif text-lg mb-1">Instagram</h3>
               <p className="body-text text-sm">Follow us for daily inspiration, new creations, and behind-the-scenes moments.</p>
-              <p className="text-sm font-sans font-medium text-primary mt-2">@kellysbakingstories →</p>
+              <p className="text-sm font-sans font-medium text-primary mt-2">@Kellys_baking_stories →</p>
             </div>
           </a>
 
@@ -55,8 +55,8 @@ const Contact = () => (
             </div>
             <div>
               <h3 className="font-serif text-lg mb-1">Location</h3>
-              <p className="body-text text-sm">Home Studio, Mumbai, India</p>
-              <p className="body-text text-sm">Delivery available across the city</p>
+              <p className="body-text text-sm">Home Studio, Ahmedabad, India</p>
+              <p className="body-text text-sm">Delivery available across Ahmedabad</p>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ const Contact = () => (
         <div className="rounded-2xl overflow-hidden border border-border/50 min-h-[400px]">
           <iframe
             title="Kelly's Baking Stories Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.70717962575!2d72.43965!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0, minHeight: 400 }}

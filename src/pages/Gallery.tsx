@@ -60,12 +60,12 @@ const Gallery = () => (
           Follow us on Instagram for daily inspiration, behind-the-scenes peeks, and new creations.
         </p>
         <a
-          href="https://instagram.com/kellysbakingstories"
+          href="https://instagram.com/Kellys_baking_stories"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary"
         >
-          Follow @kellysbakingstories
+          Follow @Kellys_baking_stories
         </a>
       </div>
     </section>
