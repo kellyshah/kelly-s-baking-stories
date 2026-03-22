@@ -16,7 +16,7 @@ const CustomOrders = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `Hi Kelly! I'd like to place a custom order.\n\nName: ${form.name}\nDate: ${form.date}\nRequirement: ${form.requirement}`;
-    window.open(`https://wa.me/1234567890?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/918799055079?text=${encodeURIComponent(message)}`, "_blank");
     setSubmitted(true);
   };
 
