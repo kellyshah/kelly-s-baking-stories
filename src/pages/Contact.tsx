@@ -55,7 +55,7 @@ const Contact = () => (
             </div>
             <div>
               <h3 className="font-serif text-lg mb-1">Location</h3>
-              <p className="body-text text-sm">Home Studio, Ahmedabad, India</p>
+              <p className="body-text text-sm">Mohini Tower, Bodakdev, Ahmedabad</p>
               <p className="body-text text-sm">Delivery available across Ahmedabad</p>
             </div>
           </div>
@@ -66,8 +66,7 @@ const Contact = () => (
             </div>
             <div>
               <h3 className="font-serif text-lg mb-1">Business Hours</h3>
-              <p className="body-text text-sm">Monday – Saturday: 9:00 AM – 7:00 PM</p>
-              <p className="body-text text-sm">Sunday: By appointment only</p>
+              <p className="body-text text-sm">Monday – Sunday: 8:00 AM – 12:30 AM</p>
             </div>
           </div>
         </div>

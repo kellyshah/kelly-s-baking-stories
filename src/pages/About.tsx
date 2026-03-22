@@ -1,4 +1,4 @@
-import founderImg from "@/assets/founder.jpg";
+import kellyImg from "@/assets/kelly-founder.jpg";
 
 const About = () => (
   <>
@@ -19,7 +19,7 @@ const About = () => (
     <section className="section-padding pt-0">
       <div className="container-narrow grid md:grid-cols-2 gap-16 items-center">
         <div className="aspect-[3/4] rounded-2xl overflow-hidden">
-          <img src={founderImg} alt="Kelly, the founder" className="w-full h-full object-cover" />
+          <img src={kellyImg} alt="Kelly, the founder" className="w-full h-full object-cover" />
         </div>
         <div className="space-y-6">
           <h2 className="heading-lg">Meet Kelly</h2>
@@ -40,9 +40,9 @@ const About = () => (
           </p>
           <div className="grid grid-cols-3 gap-6 pt-4">
             {[
-              { number: "200+", label: "Happy Customers" },
-              { number: "500+", label: "Cakes Created" },
-              { number: "3+", label: "Years of Love" },
+              { number: "1000+", label: "Happy Customers" },
+              { number: "5000+", label: "Desserts Served" },
+              { number: "6+", label: "Years of Love" },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="font-serif text-2xl text-primary">{stat.number}</p>

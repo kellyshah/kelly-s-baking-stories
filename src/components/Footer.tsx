@@ -52,8 +52,7 @@ const Footer = () => (
               <Instagram size={20} />
             </a>
           </div>
-          <p className="body-text text-sm">Mon – Sat: 9am – 7pm</p>
-          <p className="body-text text-sm">Sunday: By appointment</p>
+          <p className="body-text text-sm">Mon – Sun: 8am – 12:30am</p>
         </div>
       </div>
       <div className="border-t border-border pt-8 text-center">
