@@ -1,4 +1,4 @@
-import founderImg from "@/assets/founder.jpg";
+import kellyImg from "@/assets/kelly-founder.jpg";
 
 const About = () => (
   <>
