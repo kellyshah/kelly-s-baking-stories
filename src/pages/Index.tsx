@@ -1,16 +1,167 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from "react-router-dom";
+import { MessageCircle, Sparkles, Heart, Clock } from "lucide-react";
+import heroCake from "@/assets/hero-cake.jpg";
+import celebrationCake from "@/assets/celebration-cake.jpg";
+import dessertBox from "@/assets/dessert-box.jpg";
+import customCake from "@/assets/custom-cake.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const categories = [
+  { title: "Celebration Cakes", description: "Birthdays, anniversaries & milestones", image: celebrationCake, link: "/menu" },
+  { title: "Dessert Boxes", description: "Curated boxes of sweet happiness", image: dessertBox, link: "/menu" },
+  { title: "Custom Orders", description: "Your vision, our craft", image: customCake, link: "/custom-orders" },
+];
+
+const testimonials = [
+  { name: "Priya M.", text: "Kelly made the most gorgeous cake for my daughter's first birthday. It was almost too pretty to eat — but tasted even better!", rating: 5 },
+  { name: "Arun & Sneha", text: "Our wedding cake was an absolute dream. Every guest asked where we got it. Thank you, Kelly!", rating: 5 },
+  { name: "Meera R.", text: "The dessert box I ordered as a gift was beautifully packaged and the flavours were divine. My go-to for gifting now!", rating: 5 },
+];
+
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <>
+      {/* Hero */}
+      <section className="relative min-h-[90vh] flex items-center">
+        <div className="container-narrow w-full px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8 animate-fade-up">
+            <p className="caption-text">Handcrafted with Love</p>
+            <h1 className="heading-xl">
+              Crafting stories,<br />
+              <em className="text-primary">one cake at a time.</em>
+            </h1>
+            <p className="body-text max-w-md">
+              Every dessert from Kelly's kitchen is made fresh to order — with premium ingredients, 
+              heartfelt design, and a story worth sharing.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://wa.me/1234567890?text=Hi%20Kelly!%20I'd%20like%20to%20place%20an%20order."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                <MessageCircle size={16} />
+                Order Now
+              </a>
+              <Link to="/menu" className="btn-outline">
+                View Menu
+              </Link>
+            </div>
+          </div>
+          <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden">
+              <img src={heroCake} alt="Elegant celebration cake with floral decorations" className="w-full h-full object-cover" />
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-lg border border-border/50">
+              <p className="font-serif text-sm">★★★★★</p>
+              <p className="text-xs text-muted-foreground mt-1">200+ happy customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="section-padding bg-card">
+        <div className="container-narrow">
+          <div className="text-center mb-16">
+            <p className="caption-text mb-3">What We Create</p>
+            <h2 className="heading-lg">Our Specialties</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {categories.map((cat, i) => (
+              <Link
+                key={cat.title}
+                to={cat.link}
+                className="group block animate-fade-up"
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-5">
+                  <img
+                    src={cat.image}
+                    alt={cat.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="font-serif text-xl mb-1">{cat.title}</h3>
+                <p className="body-text text-sm">{cat.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Freshness Promise */}
+      <section className="section-padding">
+        <div className="container-narrow text-center">
+          <p className="caption-text mb-3">Our Promise</p>
+          <h2 className="heading-lg mb-12">Made Fresh. Made to Order.<br />No Mass Production.</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Sparkles, title: "Premium Ingredients", text: "Only the finest butter, chocolate, and seasonal fruits make it into our kitchen." },
+              { icon: Heart, title: "Handcrafted with Love", text: "Every cake is individually designed and decorated by hand — never from a factory line." },
+              { icon: Clock, title: "Made to Order", text: "We bake only when you order. That means peak freshness, every single time." },
+            ].map((item) => (
+              <div key={item.title} className="space-y-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <item.icon size={20} className="text-primary" />
+                </div>
+                <h3 className="font-serif text-lg">{item.title}</h3>
+                <p className="body-text text-sm">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="section-padding bg-card">
+        <div className="container-narrow">
+          <div className="text-center mb-16">
+            <p className="caption-text mb-3">Kind Words</p>
+            <h2 className="heading-lg">What Our Customers Say</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((t) => (
+              <div key={t.name} className="bg-background rounded-2xl p-8 border border-border/50">
+                <div className="text-primary mb-4">★★★★★</div>
+                <p className="body-text text-sm mb-6 italic">"{t.text}"</p>
+                <p className="font-serif text-sm">{t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Preview */}
+      <section className="section-padding">
+        <div className="container-narrow text-center">
+          <p className="caption-text mb-3">@kellysbakingstories</p>
+          <h2 className="heading-lg mb-12">Follow Our Sweet Journey</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[gallery1, gallery2, gallery3, gallery4].map((img, i) => (
+              <a
+                key={i}
+                href="https://instagram.com/kellysbakingstories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="aspect-square rounded-xl overflow-hidden group"
+              >
+                <img
+                  src={img}
+                  alt="Instagram post"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
