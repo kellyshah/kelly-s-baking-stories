@@ -18,7 +18,7 @@ const Contact = () => (
         {/* Contact cards */}
         <div className="space-y-6">
           <a
-            href="https://wa.me/1234567890?text=Hi%20Kelly!"
+            href="https://wa.me/918799055079?text=Hi%20Kelly!"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-5 bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-colors group"
