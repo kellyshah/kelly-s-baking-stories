@@ -23,12 +23,12 @@ const categories = [
 ];
 
 const testimonials = [
-  { name: "Priya M.", text: "Kelly made the most gorgeous cake for my daughter's first birthday. It was almost too pretty to eat — but tasted even better!", rating: 5 },
-  { name: "Arun & Sneha", text: "Our wedding cake was an absolute dream. Every guest asked where we got it. Thank you, Kelly!", rating: 5 },
-  { name: "Meera R.", text: "The dessert box I ordered as a gift was beautifully packaged and the flavours were divine. My go-to for gifting now!", rating: 5 },
-  { name: "Divya K.", text: "The attention to detail is unmatched. Every layer, every flavour — pure perfection. Kelly is a true artist.", rating: 5 },
-  { name: "Rahul S.", text: "Ordered a custom cake for our anniversary. The design exceeded all expectations and the taste was heavenly.", rating: 5 },
-  { name: "Nisha T.", text: "I've never seen cakes this beautiful in person. And they taste even better than they look. Absolutely worth every penny.", rating: 5 },
+  { name: "Rutu Kate", text: "Ordered a pistachio cake for my husband's birthday — rich, perfectly balanced, and so moist. The design was exactly what we had in mind and made the celebration truly special.", rating: 5 },
+  { name: "Anubhav Saxena", text: "Ordered a cake for my wife's birthday — beautiful design, unique flavor, and a light, delicious sponge. It truly made the celebration extra special.", rating: 5 },
+  { name: "Nisarg Mehta", text: "Ordered a custom cake — beautifully designed, delicious, and exactly as we envisioned. The entire experience was smooth, professional, and effortless.", rating: 5 },
+  { name: "Harsh Zaveri", text: "Ordered a cake for my girlfriend — the design was absolutely on point and it tasted delicious. Despite being eggless, they were the best ever macarons I have ever had. Made the celebration extra special.", rating: 5 },
+  { name: "Salonee Patel", text: "Ordered a DIY Christmas cookie kit — the quality was outstanding and everything was thoughtfully put together. The demo made it so easy and fun. Such a lovely experience.", rating: 5 },
+  { name: "Lalit Grade", text: "Ordered a sugar-free chocolate almond treat — rich, light, and absolutely delicious. Fully customized with almond flour and beautiful garnishing. Perfect for a healthy indulgence.", rating: 5 },
 ];
 
 const Index = () => {
