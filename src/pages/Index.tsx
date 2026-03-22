@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { MessageCircle, Sparkles, Heart, Clock } from "lucide-react";
+import { MessageCircle, Sparkles, Heart, Clock, Quote } from "lucide-react";
+import { useEffect, useRef, useState, useCallback } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 import heroCake from "@/assets/hero-cake.jpg";
 import celebrationCake from "@/assets/celebration-cake.jpg";
 import dessertBox from "@/assets/dessert-box.jpg";
@@ -19,25 +26,51 @@ const testimonials = [
   { name: "Priya M.", text: "Kelly made the most gorgeous cake for my daughter's first birthday. It was almost too pretty to eat — but tasted even better!", rating: 5 },
   { name: "Arun & Sneha", text: "Our wedding cake was an absolute dream. Every guest asked where we got it. Thank you, Kelly!", rating: 5 },
   { name: "Meera R.", text: "The dessert box I ordered as a gift was beautifully packaged and the flavours were divine. My go-to for gifting now!", rating: 5 },
+  { name: "Divya K.", text: "The attention to detail is unmatched. Every layer, every flavour — pure perfection. Kelly is a true artist.", rating: 5 },
+  { name: "Rahul S.", text: "Ordered a custom cake for our anniversary. The design exceeded all expectations and the taste was heavenly.", rating: 5 },
+  { name: "Nisha T.", text: "I've never seen cakes this beautiful in person. And they taste even better than they look. Absolutely worth every penny.", rating: 5 },
 ];
 
 const Index = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    if (!api) return;
+    const interval = setInterval(() => {
+      if (!isHovered) {
+        api.scrollNext();
+      }
+    }, 3500);
+    return () => clearInterval(interval);
+  }, [api, isHovered]);
+
   return (
     <>
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center">
         <div className="container-narrow w-full px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-up">
-            <p className="caption-text">Handcrafted with Love</p>
+          <div className="space-y-6 animate-fade-up">
+            <p className="font-serif text-sm italic text-muted-foreground tracking-wide">
+              Award-winning bakery
+            </p>
             <h1 className="heading-xl">
               Crafting stories,<br />
               <em className="text-primary">one cake at a time.</em>
             </h1>
-            <p className="body-text max-w-md">
+            <div className="space-y-1.5 max-w-md">
+              <p className="font-serif text-sm italic text-muted-foreground/80">
+                Recognized for Healthy Treats — Cakeology Awards
+              </p>
+              <p className="font-serif text-sm italic text-muted-foreground/80">
+                Featured: Recipe of the Year — Rising Star India Magazine
+              </p>
+            </div>
+            <p className="body-text max-w-md pt-2">
               Every dessert from Kelly's kitchen is made fresh to order — with premium ingredients, 
               heartfelt design, and a story worth sharing.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 pt-2">
               <a
                 href="https://wa.me/1234567890?text=Hi%20Kelly!%20I'd%20like%20to%20place%20an%20order."
                 target="_blank"
@@ -64,8 +97,50 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials — immediately after hero */}
+      <section className="py-16 md:py-20 bg-card/50">
+        <div className="container-narrow px-6">
+          <div className="text-center mb-10">
+            <p className="caption-text mb-3">Kind Words</p>
+            <h2 className="heading-lg">Loved by Our Customers</h2>
+          </div>
+          <div
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <Carousel
+              setApi={setApi}
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4 md:-ml-6">
+                {testimonials.map((t) => (
+                  <CarouselItem key={t.name} className="pl-4 md:pl-6 basis-full sm:basis-1/2 lg:basis-1/3">
+                    <div className="bg-background rounded-2xl p-8 border border-border/40 shadow-sm h-full flex flex-col justify-between">
+                      <div>
+                        <Quote size={20} className="text-primary/30 mb-4" />
+                        <p className="font-sans text-sm leading-relaxed text-foreground/80 italic mb-6">
+                          "{t.text}"
+                        </p>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <p className="font-serif text-sm text-foreground">{t.name}</p>
+                        <p className="text-primary text-xs tracking-wider">★★★★★</p>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
       {/* Categories */}
-      <section className="section-padding bg-card">
+      <section className="section-padding">
         <div className="container-narrow">
           <div className="text-center mb-16">
             <p className="caption-text mb-3">What We Create</p>
@@ -95,7 +170,7 @@ const Index = () => {
       </section>
 
       {/* Freshness Promise */}
-      <section className="section-padding">
+      <section className="section-padding bg-card">
         <div className="container-narrow text-center">
           <p className="caption-text mb-3">Our Promise</p>
           <h2 className="heading-lg mb-12">Made Fresh. Made to Order.<br />No Mass Production.</h2>
@@ -111,25 +186,6 @@ const Index = () => {
                 </div>
                 <h3 className="font-serif text-lg">{item.title}</h3>
                 <p className="body-text text-sm">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="section-padding bg-card">
-        <div className="container-narrow">
-          <div className="text-center mb-16">
-            <p className="caption-text mb-3">Kind Words</p>
-            <h2 className="heading-lg">What Our Customers Say</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((t) => (
-              <div key={t.name} className="bg-background rounded-2xl p-8 border border-border/50">
-                <div className="text-primary mb-4">★★★★★</div>
-                <p className="body-text text-sm mb-6 italic">"{t.text}"</p>
-                <p className="font-serif text-sm">{t.name}</p>
               </div>
             ))}
           </div>
