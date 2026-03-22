@@ -55,7 +55,7 @@ const Contact = () => (
             </div>
             <div>
               <h3 className="font-serif text-lg mb-1">Location</h3>
-              <p className="body-text text-sm">Home Studio, Ahmedabad, India</p>
+              <p className="body-text text-sm">Mohini Tower, Bodakdev, Ahmedabad</p>
               <p className="body-text text-sm">Delivery available across Ahmedabad</p>
             </div>
           </div>
