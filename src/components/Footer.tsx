@@ -34,7 +34,7 @@ const Footer = () => (
           <p className="caption-text mb-4">Connect</p>
           <div className="flex gap-4 mb-4">
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/918799055079"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
