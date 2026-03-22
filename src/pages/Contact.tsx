@@ -34,7 +34,7 @@ const Contact = () => (
           </a>
 
           <a
-            href="https://instagram.com/kellysbakingstories"
+            href="https://instagram.com/Kellys_baking_stories"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-5 bg-card rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-colors group"
