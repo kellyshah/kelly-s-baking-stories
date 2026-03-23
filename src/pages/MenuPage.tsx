@@ -47,6 +47,8 @@ const categories = [
     description: "Our pride — handcrafted specialties that set us apart.",
     items: [
       { name: "Macarons (Eggless)", description: "Delicate, flavourful, and completely eggless — a Kelly's signature that redefines what's possible." },
+      { name: "Corporate Hampers", description: "Professionally curated dessert hampers perfect for corporate gifting and events." },
+      { name: "Customized Hampers", description: "Bespoke dessert hampers tailored to your theme, preferences, and occasion." },
     ],
   },
 ];

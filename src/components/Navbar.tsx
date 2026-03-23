@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container-narrow flex items-center justify-between h-16 md:h-20 px-6">
         <Link to="/" className="flex items-center">
-          <img src={bakeryLogo} alt="Kelly's Baking Stories" className="h-12 md:h-16 w-auto object-contain" />
+          <img src={bakeryLogo} alt="Kelly's Baking Stories" className="h-18 md:h-24 w-auto object-contain" />
         </Link>
 
         {/* Desktop */}
