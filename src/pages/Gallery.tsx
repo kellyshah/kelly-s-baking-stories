@@ -1,5 +1,5 @@
 import heroCake from "@/assets/hero-cake.jpg";
-import celebrationCake from "@/assets/celebration-cake.jpg";
+
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import matchaCake from "@/assets/matcha-birthday-cake.jpg";
@@ -12,7 +12,7 @@ import luxuryHampers from "@/assets/luxury-hampers.png";
 const images = [
   { src: heroCake, alt: "Blush pink celebration cake with florals" },
   { src: matchaCake, alt: "Matcha birthday cake with strawberries and macarons" },
-  { src: celebrationCake, alt: "Two-tier gold accent cake" },
+  
   { src: gallery1, alt: "Rose buttercream cupcakes" },
   { src: healthyCake, alt: "Orange topped healthy cake" },
   { src: renneCake, alt: "Custom branded Renée Cosmetics cake" },
