@@ -40,8 +40,8 @@ const About = () => (
           </p>
           <div className="grid grid-cols-3 gap-6 pt-4">
             {[
-              { number: "1000+", label: "Happy Customers" },
-              { number: "5000+", label: "Desserts Served" },
+              { number: "15000+", label: "Happy Customers" },
+              { number: "25000+", label: "Desserts Served" },
               { number: "6+", label: "Years of Love" },
             ].map((stat) => (
               <div key={stat.label}>
