@@ -7,7 +7,7 @@ import healthyCake from "@/assets/healthy-cake.jpg";
 import renneCake from "@/assets/renne-cake.jpg";
 import macaronBoxes from "@/assets/macaron-boxes.png";
 import luxuryHampers from "@/assets/luxury-hampers.png";
-import cupcakesDisplay from "@/assets/cupcakes-display.png";
+
 
 const images = [
   { src: heroCake, alt: "Blush pink celebration cake with florals" },
