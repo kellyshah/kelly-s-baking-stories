@@ -16,7 +16,7 @@ const images = [
   { src: gallery1, alt: "Rose buttercream cupcakes" },
   { src: healthyCake, alt: "Orange topped healthy cake" },
   { src: renneCake, alt: "Custom branded Renée Cosmetics cake" },
-  { src: cupcakesDisplay, alt: "Assorted pastel cupcakes display" },
+  
   { src: macaronBoxes, alt: "Boxed macaron gift sets" },
   { src: gallery4, alt: "Pastel cake pops" },
   { src: luxuryHampers, alt: "Luxury gift hampers with cookies and chocolates" },
