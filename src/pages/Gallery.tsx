@@ -1,25 +1,25 @@
 import heroCake from "@/assets/hero-cake.jpg";
 import celebrationCake from "@/assets/celebration-cake.jpg";
-import dessertBox from "@/assets/dessert-box.jpg";
-import customCake from "@/assets/custom-cake.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import matchaCake from "@/assets/matcha-birthday-cake.jpg";
+import healthyCake from "@/assets/healthy-cake.jpg";
+import renneCake from "@/assets/renne-cake.jpg";
+import macaronBoxes from "@/assets/macaron-boxes.png";
+import luxuryHampers from "@/assets/luxury-hampers.png";
+import cupcakesDisplay from "@/assets/cupcakes-display.png";
 
 const images = [
   { src: heroCake, alt: "Blush pink celebration cake with florals" },
-  { src: gallery3, alt: "Minimalist white wedding cake" },
+  { src: matchaCake, alt: "Matcha birthday cake with strawberries and macarons" },
   { src: celebrationCake, alt: "Two-tier gold accent cake" },
   { src: gallery1, alt: "Rose buttercream cupcakes" },
-  { src: dessertBox, alt: "Premium macaron gift box" },
-  { src: gallery5, alt: "Chocolate drip cake with gold leaf" },
-  { src: customCake, alt: "Hand-painted watercolor cake" },
-  { src: gallery2, alt: "Berry naked cake" },
+  { src: healthyCake, alt: "Orange topped healthy cake" },
+  { src: renneCake, alt: "Custom branded Renée Cosmetics cake" },
+  { src: cupcakesDisplay, alt: "Assorted pastel cupcakes display" },
+  { src: macaronBoxes, alt: "Boxed macaron gift sets" },
   { src: gallery4, alt: "Pastel cake pops" },
-  { src: gallery6, alt: "Fresh pastry display" },
+  { src: luxuryHampers, alt: "Luxury gift hampers with cookies and chocolates" },
 ];
 
 const Gallery = () => (
