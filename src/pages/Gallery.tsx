@@ -1,5 +1,5 @@
 import heroCake from "@/assets/hero-cake.jpg";
-import celebrationCake from "@/assets/celebration-cake.jpg";
+
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import matchaCake from "@/assets/matcha-birthday-cake.jpg";
