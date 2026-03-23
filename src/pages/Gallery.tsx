@@ -21,6 +21,7 @@ const images = [
   { src: macaronBoxes, alt: "Boxed macaron gift sets" },
   { src: gallery4, alt: "Pastel cake pops" },
   { src: luxuryHampers, alt: "Luxury gift hampers with cookies and chocolates" },
+  { src: macaronTower, alt: "Colorful macaron tower display" },
 ];
 
 const Gallery = () => (
