@@ -12,7 +12,7 @@ import luxuryHampers from "@/assets/luxury-hampers.png";
 const images = [
   { src: heroCake, alt: "Blush pink celebration cake with florals" },
   { src: matchaCake, alt: "Matcha birthday cake with strawberries and macarons" },
-  { src: celebrationCake, alt: "Two-tier gold accent cake" },
+  
   { src: gallery1, alt: "Rose buttercream cupcakes" },
   { src: healthyCake, alt: "Orange topped healthy cake" },
   { src: renneCake, alt: "Custom branded Renée Cosmetics cake" },
