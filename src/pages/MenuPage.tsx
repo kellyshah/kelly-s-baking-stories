@@ -2,6 +2,23 @@ import { useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Cake, Cookie, IceCream, Star } from "lucide-react";
 
+import cakesImg from "@/assets/menu/cakes.jpg";
+import cheesecakeImg from "@/assets/menu/cheesecake.jpg";
+import designerHampersImg from "@/assets/menu/designer-hampers.jpg";
+import cupcakesImg from "@/assets/menu/cupcakes.jpg";
+import browniesImg from "@/assets/menu/brownies.jpg";
+import cookiesImg from "@/assets/menu/cookies.jpg";
+import donutsImg from "@/assets/menu/donuts.jpg";
+import chocolateImg from "@/assets/menu/chocolate.jpg";
+import truffleBallsImg from "@/assets/menu/truffle-balls.jpg";
+import jarCakesImg from "@/assets/menu/jar-cakes.jpg";
+import mousseImg from "@/assets/menu/mousse.jpg";
+import tiramisuImg from "@/assets/menu/tiramisu.jpg";
+import puddingsImg from "@/assets/menu/puddings.jpg";
+import macaronsImg from "@/assets/menu/macarons.jpg";
+import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
+import customizedHampersImg from "@/assets/menu/customized-hampers.jpg";
+
 const categories = [
   {
     id: "cakes",
@@ -9,9 +26,9 @@ const categories = [
     icon: Cake,
     description: "From elegant celebrations to bespoke designer hampers — every cake is a canvas.",
     items: [
-      { name: "Cakes", description: "Signature flavours crafted with premium ingredients, made fresh for every occasion." },
-      { name: "Cheesecake", description: "Rich, creamy, and perfectly set — classic and seasonal varieties available." },
-      { name: "Customised Designer Hampers", description: "Curated dessert collections, beautifully packaged for gifting and celebrations." },
+      { name: "Cakes", description: "Signature flavours crafted with premium ingredients, made fresh for every occasion.", image: cakesImg },
+      { name: "Cheesecake", description: "Rich, creamy, and perfectly set — classic and seasonal varieties available.", image: cheesecakeImg },
+      { name: "Customised Designer Hampers", description: "Curated dessert collections, beautifully packaged for gifting and celebrations.", image: designerHampersImg },
     ],
   },
   {
@@ -20,12 +37,12 @@ const categories = [
     icon: Cookie,
     description: "Bite-sized indulgences and everyday favourites, made with love and zero shortcuts.",
     items: [
-      { name: "Cupcakes", description: "Beautifully piped, moist cupcakes in a variety of flavours." },
-      { name: "Brownies", description: "Fudgy, rich, and deeply chocolatey — a crowd favourite." },
-      { name: "Cookies", description: "Crispy on the edges, chewy in the center. Available in classic and seasonal flavours." },
-      { name: "Donuts", description: "Soft, fluffy donuts with artisan glazes and toppings." },
-      { name: "Chocolate", description: "Handcrafted chocolates and bark made with premium cocoa." },
-      { name: "Truffle Balls", description: "Melt-in-your-mouth truffles in indulgent flavour combinations." },
+      { name: "Cupcakes", description: "Beautifully piped, moist cupcakes in a variety of flavours.", image: cupcakesImg },
+      { name: "Brownies", description: "Fudgy, rich, and deeply chocolatey — a crowd favourite.", image: browniesImg },
+      { name: "Cookies", description: "Crispy on the edges, chewy in the center. Available in classic and seasonal flavours.", image: cookiesImg },
+      { name: "Donuts", description: "Soft, fluffy donuts with artisan glazes and toppings.", image: donutsImg },
+      { name: "Chocolate", description: "Handcrafted chocolates and bark made with premium cocoa.", image: chocolateImg },
+      { name: "Truffle Balls", description: "Melt-in-your-mouth truffles in indulgent flavour combinations.", image: truffleBallsImg },
     ],
   },
   {
@@ -34,10 +51,10 @@ const categories = [
     icon: IceCream,
     description: "Elevated desserts for the refined palate — layered, textured, and unforgettable.",
     items: [
-      { name: "Jar Cakes", description: "Layered cakes in a jar — perfect for personal indulgence or gifting." },
-      { name: "Mousse", description: "Light, airy, and velvety smooth — available in classic and exotic flavours." },
-      { name: "Tiramisu", description: "An Italian classic reimagined with our signature touch." },
-      { name: "Puddings", description: "Comforting, creamy puddings with a homemade feel and premium finish." },
+      { name: "Jar Cakes", description: "Layered cakes in a jar — perfect for personal indulgence or gifting.", image: jarCakesImg },
+      { name: "Mousse", description: "Light, airy, and velvety smooth — available in classic and exotic flavours.", image: mousseImg },
+      { name: "Tiramisu", description: "An Italian classic reimagined with our signature touch.", image: tiramisuImg },
+      { name: "Puddings", description: "Comforting, creamy puddings with a homemade feel and premium finish.", image: puddingsImg },
     ],
   },
   {
@@ -46,9 +63,9 @@ const categories = [
     icon: Star,
     description: "Our pride — handcrafted specialties that set us apart.",
     items: [
-      { name: "Macarons (Eggless)", description: "Delicate, flavourful, and completely eggless — a Kelly's signature that redefines what's possible." },
-      { name: "Corporate Hampers", description: "Professionally curated dessert hampers perfect for corporate gifting and events." },
-      { name: "Customized Hampers", description: "Bespoke dessert hampers tailored to your theme, preferences, and occasion." },
+      { name: "Macarons (Eggless)", description: "Delicate, flavourful, and completely eggless — a Kelly's signature that redefines what's possible.", image: macaronsImg },
+      { name: "Corporate Hampers", description: "Professionally curated dessert hampers perfect for corporate gifting and events.", image: corporateHampersImg },
+      { name: "Customized Hampers", description: "Bespoke dessert hampers tailored to your theme, preferences, and occasion.", image: customizedHampersImg },
     ],
   },
 ];
@@ -107,15 +124,24 @@ const MenuPage = () => {
                       href={`https://wa.me/918799055079?text=${encodeURIComponent(`Hi Kelly! I'm interested in ${item.name}. Could you share more details?`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative bg-card border border-border/40 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:-translate-y-0.5 block cursor-pointer no-underline"
+                      className="group relative bg-card border border-border/40 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:-translate-y-0.5 block cursor-pointer no-underline"
                     >
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/20">
-                        <cat.icon className="w-5 h-5 text-primary" />
+                      <div className="aspect-square overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          loading="lazy"
+                          width={640}
+                          height={640}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
                       </div>
-                      <h3 className="font-serif text-lg mb-2 text-foreground">{item.name}</h3>
-                      <p className="font-sans text-sm text-muted-foreground leading-relaxed">
-                        {item.description}
-                      </p>
+                      <div className="p-5">
+                        <h3 className="font-serif text-lg mb-2 text-foreground">{item.name}</h3>
+                        <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
                     </a>
                   ))}
                 </div>
