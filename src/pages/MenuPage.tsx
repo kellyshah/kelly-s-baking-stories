@@ -102,9 +102,12 @@ const MenuPage = () => {
                 {/* Items grid */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                   {cat.items.map((item) => (
-                    <div
+                    <a
                       key={item.name}
-                      className="group relative bg-card border border-border/40 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:-translate-y-0.5"
+                      href={`https://wa.me/918799055079?text=${encodeURIComponent(`Hi Kelly! I'm interested in ${item.name}. Could you share more details?`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative bg-card border border-border/40 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/20 hover:-translate-y-0.5 block cursor-pointer no-underline"
                     >
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/20">
                         <cat.icon className="w-5 h-5 text-primary" />
@@ -113,7 +116,7 @@ const MenuPage = () => {
                       <p className="font-sans text-sm text-muted-foreground leading-relaxed">
                         {item.description}
                       </p>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </TabsContent>
