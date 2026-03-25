@@ -175,9 +175,14 @@ const MenuPage = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                <h2 className="absolute bottom-5 left-6 font-serif text-2xl sm:text-3xl text-white drop-shadow-lg">
-                  {section.section}
-                </h2>
+                <div className="absolute bottom-5 left-6">
+                  <h2 className="font-serif text-2xl sm:text-3xl text-white drop-shadow-lg">
+                    {section.section}
+                  </h2>
+                  {section.description && (
+                    <p className="font-sans text-sm text-white/80 mt-1">{section.description}</p>
+                  )}
+                </div>
               </div>
 
               {/* Items list */}
