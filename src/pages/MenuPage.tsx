@@ -7,6 +7,7 @@ import donutsImg from "@/assets/menu/donuts.jpg";
 import jarCakesImg from "@/assets/menu/jar-cakes.jpg";
 import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
 import tiramisuImg from "@/assets/menu/tiramisu.jpg";
+import macaronsImg from "@/assets/menu/macarons.jpg";
 
 const fullMenu = [
   {
