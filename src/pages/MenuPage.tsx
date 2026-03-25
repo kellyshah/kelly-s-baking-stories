@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Cake, Cookie, IceCream, Star } from "lucide-react";
+import { Cake, Cookie, IceCream, Star, BookOpen } from "lucide-react";
 
 import cakesImg from "@/assets/menu/cakes.jpg";
 import cheesecakeImg from "@/assets/menu/cheesecake.jpg";
@@ -18,6 +18,117 @@ import puddingsImg from "@/assets/menu/puddings.jpg";
 import macaronsImg from "@/assets/menu/macarons.jpg";
 import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
 import customizedHampersImg from "@/assets/menu/customized-hampers.jpg";
+
+const fullMenu = [
+  {
+    section: "Exotic Cakes",
+    items: [
+      { name: "Gianduja", price: "₹899", description: "Rich & moist chocolate cake with a molten hazelnut praline & chocolate cream that oozes out with every bite, creating a luscious and irresistible experience.", bestseller: true },
+      { name: "Chocolate Truffle", price: "₹699" },
+      { name: "Dark Chocolate Salted Caramel", price: "₹799", bestseller: true },
+      { name: "Mocha Frappe Cake", price: "₹699", description: "Delightful blend of rich coffee-infused cake with creamy mocha frosting, creating a perfect balance of coffee and chocolate in every bite — gateau au moka.", bestseller: true },
+      { name: "Hazelnut Praline Dark Chocolate", price: "₹949" },
+      { name: "Biscoff", price: "₹899" },
+      { name: "Swiss Chocolate", price: "₹749", description: "Made with premium Swiss cocoa, this treat boasts a moist & creamy center, delivering a luxurious experience that is simply irresistible.", bestseller: true },
+      { name: "Red Velvet Cake Cream Cheese", price: "₹775" },
+    ],
+  },
+  {
+    section: "Signature Cakes",
+    items: [
+      { name: "Pistachio White Chocolate", price: "₹899", description: "Harmonious blend of finely ground pistachios and creamy white chocolate creating a balance of texture & flavor with every bite.", bestseller: true },
+      { name: "Rose Pistachio", price: "₹899" },
+      { name: "Mango Madness", price: "₹729", description: "Featuring layers of light and fluffy mango gateau, filled and topped with fresh mangoes — gateau à la mangue.", bestseller: true },
+      { name: "Tiramisu", price: "₹849" },
+      { name: "Lemon Curd", price: "₹729" },
+      { name: "Vanilla Salted Caramel", price: "₹749" },
+      { name: "Pineapple", price: "₹699" },
+      { name: "Hazelnut Crunch", price: "₹849" },
+      { name: "Classic Vanilla", price: "₹699" },
+      { name: "Strawberry Hibiscus", price: "₹849", description: "Layers of delicate hibiscus-infused cake filled with a sweet & tangy strawberry compote creating a perfect balance.", bestseller: true },
+      { name: "Vanilla Praline", price: "₹749" },
+    ],
+  },
+  {
+    section: "Brownies",
+    items: [
+      { name: "Double Chocolate", price: "₹129", description: "A rich indulgence of premium cocoa and 46% dark coverture chocolate.", bestseller: true },
+      { name: "Walnut Brownie", price: "₹145" },
+      { name: "Salted Caramel Brownie", price: "₹129" },
+      { name: "Biscoff Brownie", price: "₹145", description: "A heavenly blend of rich chocolate swirled with creamy Biscoff, creating a perfect balance of indulgence in every bite.", bestseller: true },
+    ],
+  },
+  {
+    section: "Cheesecakes",
+    items: [
+      { name: "Nutella", price: "₹799" },
+      { name: "Biscoff", price: "₹849", bestseller: true },
+      { name: "Blueberry", price: "₹699" },
+      { name: "Salted Caramel", price: "₹699" },
+      { name: "Seasonal Fruit", price: "₹699" },
+      { name: "Strawberry", price: "₹699", bestseller: true },
+    ],
+  },
+  {
+    section: "Cookies",
+    items: [
+      { name: "Oatmeal Cookies" },
+      { name: "Butter Cookies" },
+      { name: "Sandwich Cookies" },
+      { name: "Chocolate Chips Cookies" },
+    ],
+  },
+  {
+    section: "Cupcakes",
+    items: [
+      { name: "Swiss Chocolate", bestseller: true },
+      { name: "Classic Vanilla" },
+      { name: "Red Velvet" },
+      { name: "Pineapple", bestseller: true },
+      { name: "Seasonal Fruit" },
+    ],
+  },
+  {
+    section: "Pies & Tarts",
+    items: [
+      { name: "Salted Caramel" },
+      { name: "Lemon Tart" },
+      { name: "Chocolate Tart" },
+    ],
+  },
+  {
+    section: "Donuts",
+    items: [
+      { name: "OG Donut" },
+      { name: "KitKat Donut" },
+      { name: "Sugar Cinnamon Donut" },
+      { name: "Nutella Bombolini" },
+      { name: "Jelly Bombolini" },
+      { name: "Creme Donut" },
+      { name: "Creamy Tiramisu Donut" },
+    ],
+  },
+  {
+    section: "Jar Cakes",
+    items: [
+      { name: "Dark Chocolate Salted Caramel" },
+      { name: "Blueberry" },
+      { name: "Lemon Curd" },
+      { name: "Swiss Chocolate" },
+      { name: "Hazelnut Dark Chocolate" },
+      { name: "Pistachio White Chocolate" },
+      { name: "White Chocolate" },
+    ],
+  },
+  {
+    section: "Corporate / Wedding Hampers",
+    items: [
+      { name: "Hampers" },
+      { name: "Corporate Orders" },
+      { name: "Party Orders" },
+    ],
+  },
+];
 
 const categories = [
   {
