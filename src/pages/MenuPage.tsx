@@ -107,6 +107,22 @@ const fullMenu = [
     ],
   },
   {
+    section: "Eggless Vegan Macarons",
+    image: macaronsImg,
+    description: "Box of 6",
+    items: [
+      { name: "Loaded Chocolate", price: "₹490" },
+      { name: "Pistachio Hazelnut", price: "₹510" },
+      { name: "Tangy Lemon", price: "₹490" },
+      { name: "Salted Caramel", price: "₹490" },
+      { name: "Tiramisu", price: "₹490" },
+      { name: "Birthday Cake", price: "₹490" },
+      { name: "Rose Pistachio", price: "₹510" },
+      { name: "Gianduja", price: "₹510" },
+      { name: "Blueberry", price: "₹520" },
+    ],
+  },
+  {
     section: "Jar Cakes",
     image: jarCakesImg,
     items: [
