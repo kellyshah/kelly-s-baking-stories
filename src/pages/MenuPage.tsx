@@ -217,6 +217,14 @@ const MenuPage = () => {
                   </TabsTrigger>
                 );
               })}
+              <TabsTrigger
+                value="full-menu"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-border/60 bg-card text-muted-foreground font-sans text-sm transition-all data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:border-primary data-[state=active]:shadow-md hover:border-primary/40"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span className="hidden sm:inline">Full Menu & Prices</span>
+                <span className="sm:hidden">Full Menu</span>
+              </TabsTrigger>
             </TabsList>
 
             {categories.map((cat) => (
@@ -258,6 +266,67 @@ const MenuPage = () => {
                 </div>
               </TabsContent>
             ))}
+
+            {/* Full Menu Tab */}
+            <TabsContent value="full-menu" className="mt-0 animate-fade-in">
+              <div className="text-center mb-10">
+                <h2 className="heading-md mb-3">Full Menu & Prices</h2>
+                <p className="body-text max-w-lg mx-auto text-sm">
+                  Complete menu with all items and pricing. Tap any item to order on WhatsApp.
+                </p>
+              </div>
+
+              <div className="space-y-10">
+                {fullMenu.map((section) => (
+                  <div key={section.section}>
+                    <h3 className="font-serif text-2xl text-foreground mb-4 pb-2 border-b border-border/40">
+                      {section.section}
+                    </h3>
+                    <div className="space-y-1">
+                      {section.items.map((item) => (
+                        <a
+                          key={item.name}
+                          href={`https://wa.me/918799055079?text=${encodeURIComponent(`Hi Kelly! I'm interested in ${item.name} (${section.section}). Could you share more details?`)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex items-start justify-between gap-4 py-3 px-4 rounded-lg hover:bg-accent/40 transition-colors cursor-pointer no-underline"
+                        >
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2">
+                              <span className="font-sans font-medium text-foreground">{item.name}</span>
+                              {item.bestseller && (
+                                <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full font-sans">
+                                  ★ Bestseller
+                                </span>
+                              )}
+                            </div>
+                            {item.description && (
+                              <p className="font-sans text-xs text-muted-foreground mt-1 leading-relaxed">
+                                {item.description}
+                              </p>
+                            )}
+                          </div>
+                          {item.price && (
+                            <span className="font-sans font-semibold text-foreground whitespace-nowrap">
+                              {item.price}
+                            </span>
+                          )}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-10 p-4 bg-accent/30 rounded-xl text-center">
+                <p className="font-sans text-sm text-muted-foreground">
+                  ★ Represents Bestsellers · Additional customization options are available in terms of theme, size, or flavors, with prices subject to change based on customization.
+                </p>
+                <p className="font-sans text-sm text-muted-foreground mt-2">
+                  We use the finest ingredients, real fruits, no artificial flavors, essence or preservatives.
+                </p>
+              </div>
+            </TabsContent>
           </Tabs>
         </div>
       </section>
