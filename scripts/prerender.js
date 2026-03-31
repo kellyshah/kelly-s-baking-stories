@@ -74,7 +74,7 @@ const routes = [
   },
   {
     path: '/custom-orders',
-    title: "Custom Cake Orders — Kelly's Baking Stories | Bespoke Cakes Mumbai",
+    title: "Custom Cake Orders — Kelly's Baking Stories | Bespoke Cakes Ahmedabad",
     description: "Order a custom cake for birthdays, weddings, anniversaries & special occasions. Tell us your vision and we'll craft it fresh to order.",
     ogTitle: "Custom Orders — Kelly's Baking Stories",
     jsonLd: {
