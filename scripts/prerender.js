@@ -14,19 +14,19 @@ const BASE_URL = 'https://kellysbakingstories.in';
 const routes = [
   {
     path: '/',
-    title: "Kelly's Baking Stories — Handcrafted Cakes & Desserts in Mumbai",
-    description: "Order artisanal, made-to-order cakes and desserts in Mumbai. Custom celebration cakes, brownies, dessert boxes & seasonal specials crafted with love.",
-    ogTitle: "Kelly's Baking Stories — Handcrafted Cakes & Desserts",
+    title: "Kelly's Baking Stories — Custom Cakes & Desserts in Ahmedabad",
+    description: "Order handcrafted cakes, cheesecakes, brownies and dessert boxes in Ahmedabad. Freshly baked with real fruits, nuts and premium chocolate.",
+    ogTitle: "Kelly's Baking Stories — Custom Cakes & Desserts in Ahmedabad",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Bakery",
       "name": "Kelly's Baking Stories",
-      "description": "Handcrafted, made-to-order cakes and desserts in Mumbai",
+      "description": "Handcrafted cakes, cheesecakes, brownies and dessert boxes in Ahmedabad",
       "url": BASE_URL,
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Mumbai",
+        "addressLocality": "Ahmedabad",
         "addressCountry": "IN"
       },
       "sameAs": [
@@ -74,7 +74,7 @@ const routes = [
   },
   {
     path: '/custom-orders',
-    title: "Custom Cake Orders — Kelly's Baking Stories | Bespoke Cakes Mumbai",
+    title: "Custom Cake Orders — Kelly's Baking Stories | Bespoke Cakes Ahmedabad",
     description: "Order a custom cake for birthdays, weddings, anniversaries & special occasions. Tell us your vision and we'll craft it fresh to order.",
     ogTitle: "Custom Orders — Kelly's Baking Stories",
     jsonLd: {
@@ -106,7 +106,7 @@ const routes = [
   {
     path: '/contact',
     title: "Contact Us — Kelly's Baking Stories | Order & Inquiries",
-    description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Mumbai. Order cakes and desserts today.",
+    description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Ahmedabad. Order cakes and desserts today.",
     ogTitle: "Contact — Kelly's Baking Stories",
     jsonLd: {
       "@context": "https://schema.org",
@@ -120,7 +120,7 @@ const routes = [
         "url": BASE_URL,
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Mumbai",
+          "addressLocality": "Ahmedabad",
           "addressCountry": "IN"
         }
       }
