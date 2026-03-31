@@ -106,7 +106,7 @@ const routes = [
   {
     path: '/contact',
     title: "Contact Us — Kelly's Baking Stories | Order & Inquiries",
-    description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Mumbai. Order cakes and desserts today.",
+    description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Ahmedabad. Order cakes and desserts today.",
     ogTitle: "Contact — Kelly's Baking Stories",
     jsonLd: {
       "@context": "https://schema.org",
