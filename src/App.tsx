@@ -10,6 +10,12 @@ import MenuPage from "./pages/MenuPage";
 import CustomOrders from "./pages/CustomOrders";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import CustomBirthdayCakes from "./pages/CustomBirthdayCakes";
+import CheesecakesAhmedabad from "./pages/CheesecakesAhmedabad";
+import BrowniesAhmedabad from "./pages/BrowniesAhmedabad";
+import DessertBoxesAhmedabad from "./pages/DessertBoxesAhmedabad";
+import CustomCakesAhmedabad from "./pages/CustomCakesAhmedabad";
+import ChocolateOrangeCake from "./pages/ChocolateOrangeCake";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +34,12 @@ const App = () => (
             <Route path="/custom-orders" element={<CustomOrders />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/custom-birthday-cakes-ahmedabad" element={<CustomBirthdayCakes />} />
+            <Route path="/cheesecakes-ahmedabad" element={<CheesecakesAhmedabad />} />
+            <Route path="/brownies-ahmedabad" element={<BrowniesAhmedabad />} />
+            <Route path="/dessert-boxes-ahmedabad" element={<DessertBoxesAhmedabad />} />
+            <Route path="/custom-cakes-ahmedabad" element={<CustomCakesAhmedabad />} />
+            <Route path="/chocolate-orange-cake-ahmedabad" element={<ChocolateOrangeCake />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
