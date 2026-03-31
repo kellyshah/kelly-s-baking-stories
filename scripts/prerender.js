@@ -14,19 +14,19 @@ const BASE_URL = 'https://kellysbakingstories.in';
 const routes = [
   {
     path: '/',
-    title: "Kelly's Baking Stories — Handcrafted Cakes & Desserts in Mumbai",
-    description: "Order artisanal, made-to-order cakes and desserts in Mumbai. Custom celebration cakes, brownies, dessert boxes & seasonal specials crafted with love.",
-    ogTitle: "Kelly's Baking Stories — Handcrafted Cakes & Desserts",
+    title: "Kelly's Baking Stories — Custom Cakes & Desserts in Ahmedabad",
+    description: "Order handcrafted cakes, cheesecakes, brownies and dessert boxes in Ahmedabad. Freshly baked with real fruits, nuts and premium chocolate.",
+    ogTitle: "Kelly's Baking Stories — Custom Cakes & Desserts in Ahmedabad",
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Bakery",
       "name": "Kelly's Baking Stories",
-      "description": "Handcrafted, made-to-order cakes and desserts in Mumbai",
+      "description": "Handcrafted cakes, cheesecakes, brownies and dessert boxes in Ahmedabad",
       "url": BASE_URL,
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Mumbai",
+        "addressLocality": "Ahmedabad",
         "addressCountry": "IN"
       },
       "sameAs": [
