@@ -145,7 +145,7 @@ const routes = [
   },
   {
     path: '/contact',
-    title: "Contact Us — Order Eggless Cakes in Ahmedabad | Kelly's Baking Stories",
+    title: "Contact Kelly's Baking Stories | Order Cakes in Ahmedabad",
     description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Ahmedabad. Order custom eggless cakes and desserts today.",
     keywords: "order cakes Ahmedabad, contact Kelly's Baking Stories, WhatsApp cake order, eggless cake delivery",
     ogTitle: "Contact — Kelly's Baking Stories Ahmedabad",
