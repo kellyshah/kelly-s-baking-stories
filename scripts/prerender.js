@@ -76,7 +76,7 @@ const routes = [
   },
   {
     path: '/about',
-    title: "About Us — Kelly's Baking Stories | 100% Eggless Bakery in Ahmedabad",
+    title: "About Kelly's Baking Stories | Custom Eggless Bakery in Ahmedabad",
     description: "Learn about Kelly's Baking Stories — our passion for 100% eggless handcrafted cakes with real ingredients, our founder's journey, and why Ahmedabad loves our desserts.",
     keywords: "eggless bakery Ahmedabad, about Kelly's Baking Stories, artisan bakery Ahmedabad, homemade cakes Ahmedabad",
     ogTitle: "About Kelly's Baking Stories — Eggless Bakery in Ahmedabad",
