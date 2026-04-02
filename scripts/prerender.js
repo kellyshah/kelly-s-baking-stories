@@ -228,7 +228,8 @@ const routes = [
 // ─── HTML generation ────────────────────────────────────────────────
 function generateHead(route) {
   const url = `${BASE_URL}${route.path === '/' ? '/' : route.path}`;
-  return `    <title>${route.title}</title>
+  return `<!-- SEO-START -->
+    <title>${route.title}</title>
     <meta name="description" content="${route.description}" />
     <meta name="keywords" content="${route.keywords}" />
     <meta name="robots" content="index, follow" />
@@ -244,7 +245,8 @@ function generateHead(route) {
     <meta name="twitter:image" content="${OG_IMAGE}" />
     <script type="application/ld+json">
     ${JSON.stringify(route.jsonLd, null, 2).split('\n').join('\n    ')}
-    </script>`;
+    </script>
+    <!-- SEO-END -->`;
 }
 
 async function prerender() {
