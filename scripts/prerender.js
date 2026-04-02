@@ -76,7 +76,7 @@ const routes = [
   },
   {
     path: '/about',
-    title: "About Us — Kelly's Baking Stories | 100% Eggless Bakery in Ahmedabad",
+    title: "About Kelly's Baking Stories | Custom Eggless Bakery in Ahmedabad",
     description: "Learn about Kelly's Baking Stories — our passion for 100% eggless handcrafted cakes with real ingredients, our founder's journey, and why Ahmedabad loves our desserts.",
     keywords: "eggless bakery Ahmedabad, about Kelly's Baking Stories, artisan bakery Ahmedabad, homemade cakes Ahmedabad",
     ogTitle: "About Kelly's Baking Stories — Eggless Bakery in Ahmedabad",
@@ -145,7 +145,7 @@ const routes = [
   },
   {
     path: '/contact',
-    title: "Contact Us — Order Eggless Cakes in Ahmedabad | Kelly's Baking Stories",
+    title: "Contact Kelly's Baking Stories | Order Cakes in Ahmedabad",
     description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Ahmedabad. Order custom eggless cakes and desserts today.",
     keywords: "order cakes Ahmedabad, contact Kelly's Baking Stories, WhatsApp cake order, eggless cake delivery",
     ogTitle: "Contact — Kelly's Baking Stories Ahmedabad",
@@ -228,7 +228,8 @@ const routes = [
 // ─── HTML generation ────────────────────────────────────────────────
 function generateHead(route) {
   const url = `${BASE_URL}${route.path === '/' ? '/' : route.path}`;
-  return `    <title>${route.title}</title>
+  return `<!-- SEO-START -->
+    <title>${route.title}</title>
     <meta name="description" content="${route.description}" />
     <meta name="keywords" content="${route.keywords}" />
     <meta name="robots" content="index, follow" />
@@ -244,12 +245,13 @@ function generateHead(route) {
     <meta name="twitter:image" content="${OG_IMAGE}" />
     <script type="application/ld+json">
     ${JSON.stringify(route.jsonLd, null, 2).split('\n').join('\n    ')}
-    </script>`;
+    </script>
+    <!-- SEO-END -->`;
 }
 
 async function prerender() {
   const indexHtml = fs.readFileSync(path.join(DIST, 'index.html'), 'utf-8');
-  const headPattern = /\s*<title>.*?<\/script>/s;
+  const headPattern = /<!--\s*SEO-START\s*-->[\s\S]*?<!--\s*SEO-END\s*-->/;
 
   for (const route of routes) {
     const newHead = generateHead(route);
