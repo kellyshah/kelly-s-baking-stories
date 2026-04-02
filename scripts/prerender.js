@@ -249,7 +249,7 @@ function generateHead(route) {
 
 async function prerender() {
   const indexHtml = fs.readFileSync(path.join(DIST, 'index.html'), 'utf-8');
-  const headPattern = /\s*<title>.*?<\/script>/s;
+  const headPattern = /<!--\s*SEO-START\s*-->[\s\S]*?<!--\s*SEO-END\s*-->/;
 
   for (const route of routes) {
     const newHead = generateHead(route);
