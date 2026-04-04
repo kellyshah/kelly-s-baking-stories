@@ -3,10 +3,12 @@ import App from "./App.tsx";
 import "./index.css";
 
 const container = document.getElementById("root")!;
+const hasPreRenderedContent = container.children.length > 0;
 
-// If the root has pre-rendered content, hydrate; otherwise do a full render (dev mode)
-if (container.innerHTML.trim().length > 0) {
+if (hasPreRenderedContent) {
   hydrateRoot(container, <App />);
 } else {
+  // Dev mode or no SSR content — clear any comments and do full render
+  container.innerHTML = "";
   createRoot(container).render(<App />);
 }
