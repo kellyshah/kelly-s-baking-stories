@@ -36,7 +36,7 @@ const BAKERY_SCHEMA = {
     "@type": "PostalAddress",
     "addressLocality": "Ahmedabad",
     "addressRegion": "Gujarat",
-    "postalCode": "380000",
+    "postalCode": "380054",
     "addressCountry": "IN"
   },
   "areaServed": ["Ahmedabad", "Satellite", "Bopal", "South Bopal", "Prahlad Nagar", "Bodakdev", "Thaltej"],
