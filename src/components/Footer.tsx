@@ -54,6 +54,17 @@ const Footer = () => (
             </a>
           </div>
           <p className="body-text text-sm">Mon – Sun: 8am – 12:30am</p>
+          <p className="body-text text-sm mt-4">
+            Visit our profile on Google Maps:{" "}
+            <a
+              href="https://www.google.com/maps?cid=7667390047784407504"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-semibold hover:text-foreground transition-colors"
+            >
+              Kelly's Baking Stories on Google
+            </a>
+          </p>
         </div>
       </div>
       <div className="border-t border-border pt-8 text-center">
