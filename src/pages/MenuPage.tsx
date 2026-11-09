@@ -6,6 +6,7 @@ import cupcakesImg from "@/assets/menu/cupcakes.jpg";
 import donutsImg from "@/assets/menu/donuts.jpg";
 import jarCakesImg from "@/assets/menu/jar-cakes.jpg";
 import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
+import macaronsImg from "@/assets/menu/macarons.jpg";
 
 export const fullMenu = [
   {
@@ -110,6 +111,22 @@ export const fullMenu = [
       { name: "Jelly Bombolini" },
       { name: "Creme Donut" },
       { name: "Creamy Tiramisu Donut" },
+    ],
+  },
+  {
+    section: "Eggless Vegan Macarons",
+    image: macaronsImg,
+    description: "Box of 6",
+    items: [
+      { name: "Loaded Chocolate", price: "₹490" },
+      { name: "Pistachio Hazelnut", price: "₹510" },
+      { name: "Tangy Lemon", price: "₹490" },
+      { name: "Salted Caramel", price: "₹490" },
+      { name: "Tiramisu", price: "₹490" },
+      { name: "Birthday Cake", price: "₹490" },
+      { name: "Rose Pistachio", price: "₹510" },
+      { name: "Gianduja", price: "₹510" },
+      { name: "Blueberry", price: "₹520" },
     ],
   },
   {
