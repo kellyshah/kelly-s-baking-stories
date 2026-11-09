@@ -64,6 +64,20 @@ describe("latest posted menu prices", () => {
     });
   });
 
+  it("keeps the existing separate macaron menu and prices unchanged", () => {
+    expect(sectionItems("Eggless Vegan Macarons")).toEqual({
+      "Loaded Chocolate": "₹490",
+      "Pistachio Hazelnut": "₹510",
+      "Tangy Lemon": "₹490",
+      "Salted Caramel": "₹490",
+      Tiramisu: "₹490",
+      "Birthday Cake": "₹490",
+      "Rose Pistachio": "₹510",
+      Gianduja: "₹510",
+      Blueberry: "₹520",
+    });
+  });
+
   it("does not invent prices for items unpriced in the PDF", () => {
     expect(sectionItems("Cookies")).toEqual({
       "Oatmeal Cookies": undefined,
