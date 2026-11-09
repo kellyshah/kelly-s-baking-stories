@@ -7,7 +7,6 @@ import donutsImg from "@/assets/menu/donuts.jpg";
 import jarCakesImg from "@/assets/menu/jar-cakes.jpg";
 import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
 import tiramisuImg from "@/assets/menu/tiramisu.jpg";
-import macaronsImg from "@/assets/menu/macarons.jpg";
 
 export const fullMenu = [
   {
@@ -70,6 +69,7 @@ export const fullMenu = [
   {
     section: "Cookies",
     image: cookiesImg,
+    description: "A little something sweet for teatime or gifting.",
     items: [
       { name: "Oatmeal Cookies" },
       { name: "Butter Cookies" },
@@ -80,6 +80,7 @@ export const fullMenu = [
   {
     section: "Cupcakes",
     image: cupcakesImg,
+    description: "Priced per piece · Soft sponge with a swirl of frosting.",
     items: [
       { name: "Swiss Chocolate", price: "₹120", bestseller: true },
       { name: "Classic Vanilla", price: "₹110" },
@@ -91,6 +92,7 @@ export const fullMenu = [
   {
     section: "Pies & Tarts",
     image: browniesImg,
+    description: "Classic favourites, freshly made to order.",
     items: [
       { name: "Salted Caramel" },
       { name: "Lemon Tart" },
@@ -100,6 +102,7 @@ export const fullMenu = [
   {
     section: "Donuts",
     image: donutsImg,
+    description: "Glazed, filled and made for an extra-sweet moment.",
     items: [
       { name: "OG Donut" },
       { name: "KitKat Donut" },
@@ -113,6 +116,7 @@ export const fullMenu = [
   {
     section: "Jar Cakes",
     image: jarCakesImg,
+    description: "Layered dessert jars in chocolate, fruit and nut flavours.",
     items: [
       { name: "Dark Chocolate Salted Caramel" },
       { name: "Blueberry" },
