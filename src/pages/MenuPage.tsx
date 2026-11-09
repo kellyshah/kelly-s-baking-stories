@@ -6,7 +6,6 @@ import cupcakesImg from "@/assets/menu/cupcakes.jpg";
 import donutsImg from "@/assets/menu/donuts.jpg";
 import jarCakesImg from "@/assets/menu/jar-cakes.jpg";
 import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
-import tiramisuImg from "@/assets/menu/tiramisu.jpg";
 
 export const fullMenu = [
   {
@@ -205,6 +204,11 @@ const MenuPage = () => {
                     {item.price && (
                       <span className="font-sans font-semibold text-foreground whitespace-nowrap">
                         {item.price}
+                      </span>
+                    )}
+                    {!item.price && (
+                      <span className="font-sans text-xs text-muted-foreground whitespace-nowrap">
+                        Ask for pricing
                       </span>
                     )}
                   </a>
