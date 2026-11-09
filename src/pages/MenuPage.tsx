@@ -6,46 +6,48 @@ import cupcakesImg from "@/assets/menu/cupcakes.jpg";
 import donutsImg from "@/assets/menu/donuts.jpg";
 import jarCakesImg from "@/assets/menu/jar-cakes.jpg";
 import corporateHampersImg from "@/assets/menu/corporate-hampers.jpg";
-import tiramisuImg from "@/assets/menu/tiramisu.jpg";
 import macaronsImg from "@/assets/menu/macarons.jpg";
 
-const fullMenu = [
+export const fullMenu = [
   {
     section: "Exotic Cakes",
     image: cakesImg,
+    description: "500g · Rich, layered cakes made for a little indulgence.",
     items: [
-      { name: "Gianduja", price: "₹899", description: "Rich & moist chocolate cake with a molten hazelnut praline & chocolate cream that oozes out with every bite, creating a luscious and irresistible experience.", bestseller: true },
-      { name: "Chocolate Truffle", price: "₹699" },
-      { name: "Dark Chocolate Salted Caramel", price: "₹799", bestseller: true },
-      { name: "Mocha Frappe Cake", price: "₹699", description: "Delightful blend of rich coffee-infused cake with creamy mocha frosting, creating a perfect balance of coffee and chocolate in every bite — gateau au moka.", bestseller: true },
-      { name: "Hazelnut Praline Dark Chocolate", price: "₹949" },
-      { name: "Biscoff", price: "₹899" },
-      { name: "Swiss Chocolate", price: "₹749", description: "Made with premium Swiss cocoa, this treat boasts a moist & creamy center, delivering a luxurious experience that is simply irresistible.", bestseller: true },
-      { name: "Red Velvet Cake Cream Cheese", price: "₹775" },
+      { name: "Gianduja", price: "₹1,099", description: "Rich & moist chocolate cake with a molten hazelnut praline & chocolate cream that oozes out with every bite, creating a luscious and irresistible experience.", bestseller: true },
+      { name: "Chocolate Truffle", price: "₹1,027" },
+      { name: "Dark Chocolate Salted Caramel", price: "₹987" },
+      { name: "Mocha Frappe Cake", price: "₹973", description: "Delightful blend of rich coffee-infused cake with creamy mocha frosting, creating a perfect balance of coffee and chocolate in every bite — gâteau au moka.", bestseller: true },
+      { name: "Hazelnut Praline Dark Chocolate", price: "₹1,419" },
+      { name: "Biscoff", price: "₹1,099" },
+      { name: "Swiss Chocolate", price: "₹897", description: "Made with premium Swiss cocoa, this treat boasts a moist & creamy center, delivering a luxurious experience that is simply irresistible.", bestseller: true },
+      { name: "Red Velvet", price: "₹897" },
     ],
   },
   {
     section: "Signature Cakes",
     image: cakesImg,
+    description: "500g · Kelly’s signature pairings and seasonal favourites.",
     items: [
-      { name: "Pistachio White Chocolate", price: "₹899", description: "Harmonious blend of finely ground pistachios and creamy white chocolate creating a balance of texture & flavor with every bite.", bestseller: true },
-      { name: "Rose Pistachio", price: "₹899" },
-      { name: "Mango Madness", price: "₹729", description: "Featuring layers of light and fluffy mango gateau, filled and topped with fresh mangoes — gateau à la mangue.", bestseller: true },
-      { name: "Tiramisu", price: "₹849" },
-      { name: "Lemon Curd", price: "₹729" },
-      { name: "Vanilla Salted Caramel", price: "₹749" },
-      { name: "Pineapple", price: "₹699" },
-      { name: "Hazelnut Crunch", price: "₹849" },
-      { name: "Classic Vanilla", price: "₹699" },
-      { name: "Strawberry Hibiscus", price: "₹849", description: "Layers of delicate hibiscus-infused cake filled with a sweet & tangy strawberry compote creating a perfect balance.", bestseller: true },
-      { name: "Vanilla Praline", price: "₹749" },
+      { name: "Pistachio White Chocolate", price: "₹1,099", description: "Harmonious blend of finely ground pistachios and creamy white chocolate creating a balance of texture & flavor with every bite.", bestseller: true },
+      { name: "Rose Pistachio", price: "₹1,099" },
+      { name: "Mango Madness", price: "₹947", description: "Featuring layers of light and fluffy mango gâteau, filled and topped with fresh mangoes — gâteau à la mangue.", bestseller: true },
+      { name: "Tiramisu", price: "₹1,097" },
+      { name: "Lemon Curd", price: "₹987" },
+      { name: "Vanilla Salted Caramel", price: "₹847" },
+      { name: "Pineapple", price: "₹947" },
+      { name: "Hazelnut Crunch", price: "₹1,419" },
+      { name: "Classic Vanilla", price: "₹847" },
+      { name: "Strawberry Hibiscus", price: "₹979", description: "Layers of delicate hibiscus-infused cake filled with a sweet & tangy strawberry compote creating a perfect balance.", bestseller: true },
+      { name: "Vanilla Praline", price: "₹943" },
     ],
   },
   {
     section: "Brownies",
     image: browniesImg,
+    description: "Priced per piece · Rich, freshly baked chocolate treats.",
     items: [
-      { name: "Double Chocolate", price: "₹129", description: "A rich indulgence of premium cocoa and 46% dark coverture chocolate.", bestseller: true },
+      { name: "Double Chocolate", price: "₹129", description: "A rich indulgence of premium cocoa and 46% dark couverture chocolate.", bestseller: true },
       { name: "Walnut Brownie", price: "₹145" },
       { name: "Salted Caramel Brownie", price: "₹129" },
       { name: "Biscoff Brownie", price: "₹145", description: "A heavenly blend of rich chocolate swirled with creamy Biscoff, creating a perfect balance of indulgence in every bite.", bestseller: true },
@@ -54,6 +56,7 @@ const fullMenu = [
   {
     section: "Cheesecakes",
     image: cheesecakeImg,
+    description: "300g · Smooth, creamy cheesecakes in much-loved flavours.",
     items: [
       { name: "Nutella", price: "₹799" },
       { name: "Biscoff", price: "₹849", bestseller: true },
@@ -66,6 +69,7 @@ const fullMenu = [
   {
     section: "Cookies",
     image: cookiesImg,
+    description: "A little something sweet for teatime or gifting.",
     items: [
       { name: "Oatmeal Cookies" },
       { name: "Butter Cookies" },
@@ -76,17 +80,19 @@ const fullMenu = [
   {
     section: "Cupcakes",
     image: cupcakesImg,
+    description: "Priced per piece · Soft sponge with a swirl of frosting.",
     items: [
-      { name: "Swiss Chocolate", bestseller: true },
-      { name: "Classic Vanilla" },
-      { name: "Red Velvet" },
-      { name: "Pineapple", bestseller: true },
-      { name: "Seasonal Fruit" },
+      { name: "Swiss Chocolate", price: "₹120", bestseller: true },
+      { name: "Classic Vanilla", price: "₹110" },
+      { name: "Red Velvet", price: "₹110" },
+      { name: "Pineapple", price: "₹125", bestseller: true },
+      { name: "Seasonal Fruit", price: "₹130" },
     ],
   },
   {
     section: "Pies & Tarts",
-    image: tiramisuImg,
+    image: browniesImg,
+    description: "Classic favourites, freshly made to order.",
     items: [
       { name: "Salted Caramel" },
       { name: "Lemon Tart" },
@@ -96,6 +102,7 @@ const fullMenu = [
   {
     section: "Donuts",
     image: donutsImg,
+    description: "Glazed, filled and made for an extra-sweet moment.",
     items: [
       { name: "OG Donut" },
       { name: "KitKat Donut" },
@@ -125,6 +132,7 @@ const fullMenu = [
   {
     section: "Jar Cakes",
     image: jarCakesImg,
+    description: "Layered dessert jars in chocolate, fruit and nut flavours.",
     items: [
       { name: "Dark Chocolate Salted Caramel" },
       { name: "Blueberry" },
@@ -213,6 +221,11 @@ const MenuPage = () => {
                     {item.price && (
                       <span className="font-sans font-semibold text-foreground whitespace-nowrap">
                         {item.price}
+                      </span>
+                    )}
+                    {!item.price && (
+                      <span className="font-sans text-xs text-muted-foreground whitespace-nowrap">
+                        Ask for pricing
                       </span>
                     )}
                   </a>
