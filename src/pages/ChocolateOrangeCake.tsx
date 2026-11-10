@@ -19,7 +19,7 @@ const ChocolateOrangeCake = () => {
             Chocolate Orange Cake in Ahmedabad
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Experience the perfect harmony of rich Belgian dark chocolate and fresh orange zest. Our Chocolate Orange Cake is one of the most loved creations at Kelly's Baking Stories — baked fresh to order in Ahmedabad with premium ingredients and no artificial flavours.
+            Experience the perfect harmony of rich Belgian dark chocolate and fresh orange zest. Our Chocolate Orange Cake is one of the most loved creations at Kelly's Baking Stories - baked fresh to order in Ahmedabad with premium ingredients and no artificial flavours.
           </p>
           <a
             href={WA_ORDER}
@@ -41,10 +41,10 @@ const ChocolateOrangeCake = () => {
                 What Makes It Special
               </h2>
               <p className="text-muted-foreground mb-4">
-                Our Chocolate Orange Cake combines moist dark chocolate sponge layers infused with real orange zest, filled with homemade orange curd and dark chocolate ganache. The result is a sophisticated flavour profile — citrusy, rich and deeply satisfying.
+                Our Chocolate Orange Cake combines moist dark chocolate sponge layers infused with real orange zest, filled with homemade orange curd and dark chocolate ganache. The result is a sophisticated flavour profile - citrusy, rich and deeply satisfying.
               </p>
               <p className="text-muted-foreground mb-4">
-                We use premium Belgian chocolate, freshly squeezed orange juice, real orange zest and pure cocoa. No orange essence, no artificial colouring — just real ingredients that create an unforgettable taste.
+                We use premium Belgian chocolate, freshly squeezed orange juice, real orange zest and pure cocoa. No orange essence, no artificial colouring - just real ingredients that create an unforgettable taste.
               </p>
               <p className="text-muted-foreground">
                 Available in 500g and 1kg sizes. Perfect for birthdays, dinner parties, or as a thoughtful gift for the chocolate lover in your life.
@@ -85,7 +85,7 @@ const ChocolateOrangeCake = () => {
               Order Your Chocolate Orange Cake
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-6">
-              Available for delivery across Ahmedabad — Satellite, Bopal, Prahlad Nagar, Bodakdev, Thaltej and more. Message us on WhatsApp to order.
+              Available for delivery across Ahmedabad - Satellite, Bopal, Prahlad Nagar, Bodakdev, Thaltej and more. Message us on WhatsApp to order.
             </p>
             <a
               href={WA_ORDER}

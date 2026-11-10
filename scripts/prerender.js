@@ -9,7 +9,7 @@
  * HOW TO ADD A NEW ROUTE:
  * 1. Add a new entry to the `routes` array below.
  * 2. Register the route in src/App.tsx and src/entry-server.tsx.
- * 3. Run `npm run build` — the new route will be fully pre-rendered.
+ * 3. Run `npm run build` - the new route will be fully pre-rendered.
  */
 import fs from 'fs';
 import path from 'path';
@@ -80,18 +80,18 @@ const routes = [
   {
     path: '/about',
     title: "About Kelly's Baking Stories | Custom Eggless Bakery in Ahmedabad",
-    description: "Learn about Kelly's Baking Stories — our passion for 100% eggless handcrafted cakes with real ingredients, our founder's journey, and why Ahmedabad loves our desserts.",
+    description: "Learn about Kelly's Baking Stories - our passion for 100% eggless handcrafted cakes with real ingredients, our founder's journey, and why Ahmedabad loves our desserts.",
     keywords: "eggless bakery Ahmedabad, about Kelly's Baking Stories, artisan bakery Ahmedabad, homemade cakes Ahmedabad",
-    ogTitle: "About Kelly's Baking Stories — Eggless Bakery in Ahmedabad",
+    ogTitle: "About Kelly's Baking Stories - Eggless Bakery in Ahmedabad",
     priority: '0.8',
     jsonLd: { "@context": "https://schema.org", "@type": "Organization", "name": "Kelly's Baking Stories", "url": `${BASE_URL}/about`, "logo": LOGO, "description": "100% eggless artisan bakery in Ahmedabad specialising in custom cakes, cheesecakes and dessert hampers", "address": BAKERY_SCHEMA.address, "sameAs": BAKERY_SCHEMA.sameAs }
   },
   {
     path: '/menu',
-    title: "Menu & Prices — Eggless Cakes, Brownies, Cheesecakes | Kelly's Baking Stories Ahmedabad",
-    description: "Browse our full menu — exotic cakes, signature cakes, cheesecakes, brownies, dessert jars, macarons & more. 100% eggless. View prices and order via WhatsApp in Ahmedabad.",
+    title: "Menu & Prices - Eggless Cakes, Brownies, Cheesecakes | Kelly's Baking Stories Ahmedabad",
+    description: "Browse our full menu - exotic cakes, signature cakes, cheesecakes, brownies, dessert jars, macarons & more. 100% eggless. View prices and order via WhatsApp in Ahmedabad.",
     keywords: "cake menu Ahmedabad, brownie prices Ahmedabad, cheesecake prices, dessert menu Ahmedabad, eggless cake menu",
-    ogTitle: "Our Menu — Kelly's Baking Stories Ahmedabad",
+    ogTitle: "Our Menu - Kelly's Baking Stories Ahmedabad",
     priority: '0.9',
     jsonLd: { "@context": "https://schema.org", "@type": "Menu", "name": "Kelly's Baking Stories Menu", "description": "Full eggless menu with prices for cakes, brownies, cheesecakes, dessert jars, and macarons in Ahmedabad", "url": `${BASE_URL}/menu`,
       "hasMenuSection": [
@@ -106,19 +106,19 @@ const routes = [
   },
   {
     path: '/custom-orders',
-    title: "Custom Eggless Cake Orders in Ahmedabad — Kelly's Baking Stories",
+    title: "Custom Eggless Cake Orders in Ahmedabad - Kelly's Baking Stories",
     description: "Order a custom eggless cake for birthdays, weddings, anniversaries & special occasions in Ahmedabad. Share your vision and we'll bake it fresh with premium ingredients.",
     keywords: "custom cake order Ahmedabad, eggless custom cakes, bespoke cakes Ahmedabad, celebration cakes Ahmedabad",
-    ogTitle: "Custom Orders — Kelly's Baking Stories Ahmedabad",
+    ogTitle: "Custom Orders - Kelly's Baking Stories Ahmedabad",
     priority: '0.8',
     jsonLd: { "@context": "https://schema.org", "@type": "Service", "name": "Custom Eggless Cake Orders in Ahmedabad", "description": "Bespoke 100% eggless celebration cakes for all occasions in Ahmedabad", "url": `${BASE_URL}/custom-orders`, "areaServed": "Ahmedabad", "provider": { ...BAKERY_SCHEMA } }
   },
   {
     path: '/gallery',
-    title: "Gallery — Eggless Cake Creations in Ahmedabad | Kelly's Baking Stories",
+    title: "Gallery - Eggless Cake Creations in Ahmedabad | Kelly's Baking Stories",
     description: "Browse our gallery of 100% eggless handcrafted cakes, cheesecakes, brownies and custom creations delivered across Ahmedabad.",
     keywords: "cake gallery Ahmedabad, custom cake photos, eggless dessert gallery, cake designs Ahmedabad",
-    ogTitle: "Gallery — Kelly's Baking Stories",
+    ogTitle: "Gallery - Kelly's Baking Stories",
     priority: '0.7',
     jsonLd: { "@context": "https://schema.org", "@type": "ImageGallery", "name": "Kelly's Baking Stories Gallery", "description": "Photos of 100% eggless handcrafted cakes and desserts from Ahmedabad", "url": `${BASE_URL}/gallery` }
   },
@@ -127,9 +127,9 @@ const routes = [
     title: "Contact Kelly's Baking Stories | Order Cakes in Ahmedabad",
     description: "Get in touch with Kelly's Baking Stories. Reach us on WhatsApp, Instagram, or visit us in Ahmedabad. Order custom eggless cakes and desserts today.",
     keywords: "order cakes Ahmedabad, contact Kelly's Baking Stories, WhatsApp cake order, eggless cake delivery",
-    ogTitle: "Contact — Kelly's Baking Stories Ahmedabad",
+    ogTitle: "Contact - Kelly's Baking Stories Ahmedabad",
     priority: '0.8',
-    jsonLd: { "@context": "https://schema.org", "@type": "Organization", "name": "Kelly's Baking Stories", "url": `${BASE_URL}/contact`, "logo": LOGO, "description": "100% eggless bakery — custom cakes, cheesecakes, desserts and hampers in Ahmedabad", "telephone": "+91-8799055079", "address": BAKERY_SCHEMA.address,
+    jsonLd: { "@context": "https://schema.org", "@type": "Organization", "name": "Kelly's Baking Stories", "url": `${BASE_URL}/contact`, "logo": LOGO, "description": "100% eggless bakery - custom cakes, cheesecakes, desserts and hampers in Ahmedabad", "telephone": "+91-8799055079", "address": BAKERY_SCHEMA.address,
       "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+91-8799055079", "availableLanguage": ["English", "Hindi", "Gujarati"] },
       "sameAs": BAKERY_SCHEMA.sameAs
     }
@@ -182,11 +182,11 @@ const routes = [
   {
     path: '/chocolate-orange-cake-ahmedabad',
     title: "Chocolate Orange Cake in Ahmedabad | Kelly's Baking Stories",
-    description: "Order our signature eggless Chocolate Orange Cake in Ahmedabad — rich Belgian dark chocolate with fresh orange zest and homemade orange curd.",
+    description: "Order our signature eggless Chocolate Orange Cake in Ahmedabad - rich Belgian dark chocolate with fresh orange zest and homemade orange curd.",
     keywords: "chocolate orange cake Ahmedabad, eggless chocolate cake, premium chocolate cake order, Belgian chocolate cake Ahmedabad",
     ogTitle: "Chocolate Orange Cake in Ahmedabad | Kelly's Baking Stories",
     priority: '0.8',
-    jsonLd: productOffer("Eggless Chocolate Orange Cake", "Rich Belgian dark chocolate cake with fresh orange zest and homemade orange curd — 100% eggless", "/chocolate-orange-cake-ahmedabad")
+    jsonLd: productOffer("Eggless Chocolate Orange Cake", "Rich Belgian dark chocolate cake with fresh orange zest and homemade orange curd - 100% eggless", "/chocolate-orange-cake-ahmedabad")
   }
 ];
 
@@ -322,7 +322,7 @@ Sitemap: ${BASE_URL}/sitemap.xml
 
   // Cleanup server bundle
   fs.rmSync(path.join(DIST, 'server'), { recursive: true, force: true });
-  console.log('\n✅ SSG complete — all pages fully pre-rendered with HTML body content');
+  console.log('\n✅ SSG complete - all pages fully pre-rendered with HTML body content');
 }
 
 prerender().catch(err => {

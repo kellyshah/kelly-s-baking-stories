@@ -19,7 +19,7 @@ const DessertBoxesAhmedabad = () => {
             Dessert Boxes in Ahmedabad
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Send a curated box of handcrafted desserts for birthdays, festivals, housewarmings or corporate gifts. Our dessert boxes in Ahmedabad include a mix of brownies, cookies, cake slices and treats — all made fresh with premium ingredients.
+            Send a curated box of handcrafted desserts for birthdays, festivals, housewarmings or corporate gifts. Our dessert boxes in Ahmedabad include a mix of brownies, cookies, cake slices and treats - all made fresh with premium ingredients.
           </p>
           <a
             href={WA_ORDER}
@@ -41,10 +41,10 @@ const DessertBoxesAhmedabad = () => {
                 Curated with Love
               </h2>
               <p className="text-muted-foreground mb-4">
-                Our dessert boxes are more than just treats — they're a complete gifting experience. Each box is carefully assembled with a variety of our bestselling desserts, beautifully packed and ready to delight. We use premium chocolate, real butter, fresh fruits and homemade fillings in every item.
+                Our dessert boxes are more than just treats - they're a complete gifting experience. Each box is carefully assembled with a variety of our bestselling desserts, beautifully packed and ready to delight. We use premium chocolate, real butter, fresh fruits and homemade fillings in every item.
               </p>
               <p className="text-muted-foreground">
-                Whether it's Diwali, Rakhi, Christmas, a housewarming or a corporate thank-you — our dessert boxes in Ahmedabad are the sweetest way to celebrate. Custom boxes available on request.
+                Whether it's Diwali, Rakhi, Christmas, a housewarming or a corporate thank-you - our dessert boxes in Ahmedabad are the sweetest way to celebrate. Custom boxes available on request.
               </p>
             </div>
             <img
@@ -84,7 +84,7 @@ const DessertBoxesAhmedabad = () => {
               Order Dessert Boxes in Ahmedabad
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              We deliver dessert boxes across Ahmedabad — Satellite, Bopal, South Bopal, Prahlad Nagar, Bodakdev and Thaltej. Order 2-3 days in advance for custom hampers. Standard boxes available with 24 hours notice.
+              We deliver dessert boxes across Ahmedabad - Satellite, Bopal, South Bopal, Prahlad Nagar, Bodakdev and Thaltej. Order 2-3 days in advance for custom hampers. Standard boxes available with 24 hours notice.
             </p>
             <a
               href={WA_ORDER}

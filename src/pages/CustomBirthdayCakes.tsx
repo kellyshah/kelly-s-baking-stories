@@ -42,7 +42,7 @@ const CustomBirthdayCakes = () => {
                 Why Choose Our Birthday Cakes?
               </h2>
               <p className="text-muted-foreground mb-4">
-                We believe birthdays deserve something truly special. Our custom birthday cakes in Ahmedabad are crafted from scratch using the finest ingredients — real Belgian chocolate, fresh seasonal fruits, homemade cream cheese fillings and pure vanilla extract. We never use artificial flavours or preservatives.
+                We believe birthdays deserve something truly special. Our custom birthday cakes in Ahmedabad are crafted from scratch using the finest ingredients - real Belgian chocolate, fresh seasonal fruits, homemade cream cheese fillings and pure vanilla extract. We never use artificial flavours or preservatives.
               </p>
               <p className="text-muted-foreground">
                 Whether you want a simple elegant design or an elaborate themed creation, we work closely with you to bring your vision to life. From kids' character cakes to sophisticated adult celebrations, every cake is a unique masterpiece.

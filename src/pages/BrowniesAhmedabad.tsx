@@ -19,7 +19,7 @@ const BrowniesAhmedabad = () => {
             Handcrafted Brownies in Ahmedabad
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Indulge in rich, fudgy brownies made with premium Belgian chocolate, real butter and no artificial flavours. At Kelly's Baking Stories, our brownies are baked fresh to order in Ahmedabad — perfect for gifting, parties or a personal treat.
+            Indulge in rich, fudgy brownies made with premium Belgian chocolate, real butter and no artificial flavours. At Kelly's Baking Stories, our brownies are baked fresh to order in Ahmedabad - perfect for gifting, parties or a personal treat.
           </p>
           <a
             href={WA_ORDER}
@@ -41,7 +41,7 @@ const BrowniesAhmedabad = () => {
                 What Makes Our Brownies Special
               </h2>
               <p className="text-muted-foreground mb-4">
-                Our brownies are unapologetically decadent. Made with premium dark Belgian chocolate, real unsalted butter, and baked at low temperatures for that perfect fudgy centre with a crackly top. Every batch is made fresh — never stored, never reheated.
+                Our brownies are unapologetically decadent. Made with premium dark Belgian chocolate, real unsalted butter, and baked at low temperatures for that perfect fudgy centre with a crackly top. Every batch is made fresh - never stored, never reheated.
               </p>
               <p className="text-muted-foreground">
                 Available as a box of 4 or 6, our brownies make the perfect gift for birthdays, anniversaries, Diwali hampers, or just because. We also offer brownie platters for parties and corporate events across Ahmedabad.
@@ -84,7 +84,7 @@ const BrowniesAhmedabad = () => {
               Order Brownies in Ahmedabad
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              Our brownies are available in boxes of 4 and 6. We deliver across Ahmedabad — Satellite, Bopal, South Bopal, Prahlad Nagar, Bodakdev and Thaltej. Order via WhatsApp with 24 hours notice.
+              Our brownies are available in boxes of 4 and 6. We deliver across Ahmedabad - Satellite, Bopal, South Bopal, Prahlad Nagar, Bodakdev and Thaltej. Order via WhatsApp with 24 hours notice.
             </p>
             <a
               href={WA_ORDER}

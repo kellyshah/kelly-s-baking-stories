@@ -20,7 +20,7 @@ const CustomCakesAhmedabad = () => {
             Custom Celebration Cakes in Ahmedabad
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            From weddings to anniversaries, baby showers to milestones — our custom cakes in Ahmedabad are designed and baked uniquely for your occasion. Made with premium ingredients, real fruits and zero artificial essence.
+            From weddings to anniversaries, baby showers to milestones - our custom cakes in Ahmedabad are designed and baked uniquely for your occasion. Made with premium ingredients, real fruits and zero artificial essence.
           </p>
           <a
             href={WA_ORDER}
@@ -42,7 +42,7 @@ const CustomCakesAhmedabad = () => {
                 Every Cake Tells a Story
               </h2>
               <p className="text-muted-foreground mb-4">
-                At Kelly's Baking Stories, we believe every celebration deserves a cake as unique as the moment it marks. Our custom cakes in Ahmedabad are designed from scratch — you share your vision, and we bring it to life with meticulous attention to flavour, design and presentation.
+                At Kelly's Baking Stories, we believe every celebration deserves a cake as unique as the moment it marks. Our custom cakes in Ahmedabad are designed from scratch - you share your vision, and we bring it to life with meticulous attention to flavour, design and presentation.
               </p>
               <p className="text-muted-foreground">
                 We work with premium Belgian chocolate, fresh seasonal fruits, homemade buttercream and ganache, imported cream cheese and natural flavourings. Every tier is baked fresh, never frozen, and assembled with care on your chosen date.

@@ -29,12 +29,12 @@ const WA_CUSTOM = `${WA_LINK}?text=${encodeURIComponent("Hi Kelly! I'd like to d
 const IG_LINK = "https://instagram.com/Kellys_baking_stories";
 
 const testimonials = [
-  { name: "Rutu Kate", text: "Ordered a pistachio cake for my husband's birthday — rich, perfectly balanced, and so moist. The design was exactly what we had in mind and made the celebration truly special." },
-  { name: "Anubhav Saxena", text: "Ordered a cake for my wife's birthday — beautiful design, unique flavor, and a light, delicious sponge. It truly made the celebration extra special." },
-  { name: "Nisarg Mehta", text: "Ordered a custom cake — beautifully designed, delicious, and exactly as we envisioned. The entire experience was smooth, professional, and effortless." },
-  { name: "Harsh Zaveri", text: "Ordered a cake for my girlfriend — the design was absolutely on point and it tasted delicious. Despite being eggless, they were the best ever macarons I have ever had." },
-  { name: "Salonee Patel", text: "Ordered a DIY Christmas cookie kit — the quality was outstanding and everything was thoughtfully put together. The demo made it so easy and fun. Such a lovely experience." },
-  { name: "Lalit Grade", text: "Ordered a sugar-free chocolate almond treat — rich, light, and absolutely delicious. Fully customized with almond flour and beautiful garnishing. Perfect for a healthy indulgence." },
+  { name: "Rutu Kate", text: "Ordered a pistachio cake for my husband's birthday - rich, perfectly balanced, and so moist. The design was exactly what we had in mind and made the celebration truly special." },
+  { name: "Anubhav Saxena", text: "Ordered a cake for my wife's birthday - beautiful design, unique flavor, and a light, delicious sponge. It truly made the celebration extra special." },
+  { name: "Nisarg Mehta", text: "Ordered a custom cake - beautifully designed, delicious, and exactly as we envisioned. The entire experience was smooth, professional, and effortless." },
+  { name: "Harsh Zaveri", text: "Ordered a cake for my girlfriend - the design was absolutely on point and it tasted delicious. Despite being eggless, they were the best ever macarons I have ever had." },
+  { name: "Salonee Patel", text: "Ordered a DIY Christmas cookie kit - the quality was outstanding and everything was thoughtfully put together. The demo made it so easy and fun. Such a lovely experience." },
+  { name: "Lalit Grade", text: "Ordered a sugar-free chocolate almond treat - rich, light, and absolutely delicious. Fully customized with almond flour and beautiful garnishing. Perfect for a healthy indulgence." },
 ];
 
 const signatures = [
@@ -47,7 +47,7 @@ const signatures = [
 
 const whyUs = [
   { icon: Clock, title: "Made-to-Order Only", desc: "Every single item is baked fresh when you order. No pre-made stock, ever." },
-  { icon: Paintbrush, title: "Pinterest to Reality", desc: "Share your inspiration and we'll bring it to life — exactly as you envisioned." },
+  { icon: Paintbrush, title: "Pinterest to Reality", desc: "Share your inspiration and we'll bring it to life - exactly as you envisioned." },
   { icon: Sparkles, title: "Premium Ingredients", desc: "We use only the finest butter, chocolate, and seasonal produce in every creation." },
   { icon: Leaf, title: "Healthy & Conscious", desc: "Sugar-free, gluten-free, vegan options. No palm oil or chemical-based enhancers." },
 ];
@@ -94,14 +94,14 @@ const Index = () => {
             </h1>
             <div className="space-y-1.5 max-w-md">
               <p className="font-serif text-base italic text-muted-foreground/80">
-                Recognized for Healthy Treats — Cakeology Awards
+                Recognized for Healthy Treats - Cakeology Awards
               </p>
               <p className="font-serif text-base italic text-muted-foreground/80">
-                Featured: Recipe of the Year — Rising Star India Magazine
+                Featured: Recipe of the Year - Rising Star India Magazine
               </p>
             </div>
             <p className="body-text max-w-md pt-2">
-              Every dessert from Kelly's kitchen is made fresh to order — with premium ingredients, 
+              Every dessert from Kelly's kitchen is made fresh to order - with premium ingredients, 
               heartfelt design, and a story worth sharing.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
@@ -226,7 +226,7 @@ const Index = () => {
             <p className="caption-text">Bespoke Creations</p>
             <h2 className="heading-lg">Designed Just for You</h2>
             <p className="body-text">
-              From a whispered idea to a showstopping centrepiece — every custom cake begins with 
+              From a whispered idea to a showstopping centrepiece - every custom cake begins with 
               your inspiration. Share a Pinterest board, a sketch, or simply a feeling, and we'll 
               craft something uniquely yours with meticulous attention to design and flavor.
             </p>
@@ -328,12 +328,12 @@ const Index = () => {
             <div className="space-y-2">
               <Truck size={22} className="text-primary mx-auto" />
               <h3 className="font-serif text-base">Delivery Area</h3>
-              <p className="body-text text-sm">Ahmedabad — pickup & delivery</p>
+              <p className="body-text text-sm">Ahmedabad - pickup & delivery</p>
             </div>
             <div className="space-y-2">
               <ShieldCheck size={22} className="text-primary mx-auto" />
               <h3 className="font-serif text-base">Full Customization</h3>
-              <p className="body-text text-sm">Flavors, design, dietary needs — all tailored</p>
+              <p className="body-text text-sm">Flavors, design, dietary needs - all tailored</p>
             </div>
           </div>
         </div>
@@ -346,7 +346,7 @@ const Index = () => {
             "A homegrown bakery crafting thoughtful, made-to-order desserts with a focus on 
             design, quality, and experience."
           </p>
-          <p className="caption-text mt-6">— Kelly's Baking Stories, Ahmedabad</p>
+          <p className="caption-text mt-6">- Kelly's Baking Stories, Ahmedabad</p>
         </div>
       </section>
 
@@ -355,7 +355,7 @@ const Index = () => {
         <div className="container-narrow text-center max-w-2xl mx-auto">
           <h2 className="heading-lg mb-4">Ready to Celebrate?</h2>
           <p className="body-text mb-8">
-            Whether it's a birthday, an anniversary, or just a Tuesday that deserves cake — 
+            Whether it's a birthday, an anniversary, or just a Tuesday that deserves cake - 
             let's create something beautiful together.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
