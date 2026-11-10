@@ -41,7 +41,7 @@ const CheesecakesAhmedabad = () => {
                 Why Our Cheesecakes Stand Out
               </h2>
               <p className="text-muted-foreground mb-4">
-                Every cheesecake from Kelly's Baking Stories is a labour of love. We use premium imported cream cheese, fresh seasonal fruits, handmade compotes and a buttery biscuit base made from scratch. No artificial flavours, no shortcuts — just real ingredients that you can taste in every bite.
+                Every cheesecake from Kelly's Baking Stories is a labour of love. We use premium imported cream cheese, fresh seasonal fruits, handmade compotes and a buttery biscuit base made from scratch. No artificial flavours, no shortcuts - just real ingredients that you can taste in every bite.
               </p>
               <p className="text-muted-foreground">
                 Whether you're celebrating a birthday, anniversary, or simply craving something indulgent, our cheesecakes in Ahmedabad are the perfect treat. Available in individual portions, 500g, and 1kg sizes.
@@ -67,7 +67,7 @@ const CheesecakesAhmedabad = () => {
                 { name: "Strawberry Cheesecake", desc: "Fresh strawberries and cream cheese perfection" },
                 { name: "Chocolate Cheesecake", desc: "Belgian chocolate swirled into cream cheese" },
                 { name: "Raspberry Cheesecake", desc: "Tangy raspberry compote on creamy base" },
-                { name: "Peanut Butter Cheesecake", desc: "For PB lovers — rich and decadent" },
+                { name: "Peanut Butter Cheesecake", desc: "For PB lovers - rich and decadent" },
               ].map((item) => (
                 <div key={item.name} className="flex items-start gap-3 p-4 bg-card rounded-xl">
                   <Cake className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

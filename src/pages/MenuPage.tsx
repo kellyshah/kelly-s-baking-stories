@@ -17,7 +17,7 @@ export const fullMenu = [
       { name: "Gianduja", price: "₹1,099", description: "Rich & moist chocolate cake with a molten hazelnut praline & chocolate cream that oozes out with every bite, creating a luscious and irresistible experience.", bestseller: true },
       { name: "Chocolate Truffle", price: "₹1,027" },
       { name: "Dark Chocolate Salted Caramel", price: "₹987" },
-      { name: "Mocha Frappe Cake", price: "₹973", description: "Delightful blend of rich coffee-infused cake with creamy mocha frosting, creating a perfect balance of coffee and chocolate in every bite — gâteau au moka.", bestseller: true },
+      { name: "Mocha Frappe Cake", price: "₹973", description: "Delightful blend of rich coffee-infused cake with creamy mocha frosting, creating a perfect balance of coffee and chocolate in every bite - gâteau au moka.", bestseller: true },
       { name: "Hazelnut Praline Dark Chocolate", price: "₹1,419" },
       { name: "Biscoff", price: "₹1,099" },
       { name: "Swiss Chocolate", price: "₹897", description: "Made with premium Swiss cocoa, this treat boasts a moist & creamy center, delivering a luxurious experience that is simply irresistible.", bestseller: true },
@@ -31,7 +31,7 @@ export const fullMenu = [
     items: [
       { name: "Pistachio White Chocolate", price: "₹1,099", description: "Harmonious blend of finely ground pistachios and creamy white chocolate creating a balance of texture & flavor with every bite.", bestseller: true },
       { name: "Rose Pistachio", price: "₹1,099" },
-      { name: "Mango Madness", price: "₹947", description: "Featuring layers of light and fluffy mango gâteau, filled and topped with fresh mangoes — gâteau à la mangue.", bestseller: true },
+      { name: "Mango Madness", price: "₹947", description: "Featuring layers of light and fluffy mango gâteau, filled and topped with fresh mangoes - gâteau à la mangue.", bestseller: true },
       { name: "Tiramisu", price: "₹1,097" },
       { name: "Lemon Curd", price: "₹987" },
       { name: "Vanilla Salted Caramel", price: "₹847" },
@@ -163,7 +163,7 @@ const MenuPage = () => {
           <p className="caption-text mb-3">Explore</p>
           <h1 className="heading-xl mb-4">Our Menu</h1>
           <p className="body-text max-w-xl mx-auto">
-            Every creation is made fresh to order using premium ingredients — no preservatives,
+            Every creation is made fresh to order using premium ingredients - no preservatives,
             no palm oil, no shortcuts. Just honest, beautiful desserts.
           </p>
         </div>

@@ -8,7 +8,7 @@ const About = () => (
         <p className="caption-text mb-3">Our Story</p>
         <h1 className="heading-xl mb-6">A Passion Born in a Home Kitchen</h1>
         <p className="body-text">
-          What started as a hobby — baking cakes for friends and family — grew into something 
+          What started as a hobby - baking cakes for friends and family - grew into something 
           far more beautiful. Kelly's Baking Stories is the story of love, creativity, and the 
           belief that every celebration deserves something extraordinary.
         </p>
@@ -24,18 +24,18 @@ const About = () => (
         <div className="space-y-6">
           <h2 className="heading-lg">Meet Kelly</h2>
           <p className="body-text">
-            I'm Kelly — a self-taught baker, a dreamer, and someone who believes that food 
+            I'm Kelly - a self-taught baker, a dreamer, and someone who believes that food 
             should tell a story. I started baking in my tiny kitchen with nothing but a hand 
             mixer and a whole lot of passion.
           </p>
           <p className="body-text">
-            Today, every cake that leaves my kitchen is still made the same way — by hand, 
+            Today, every cake that leaves my kitchen is still made the same way - by hand, 
             with heart, and with the freshest ingredients I can find. No shortcuts, no 
             preservatives, no compromises.
           </p>
           <p className="body-text">
             Whether it's a towering wedding cake or a simple box of brownies, I pour the 
-            same love into every creation. Because I believe that desserts aren't just food — 
+            same love into every creation. Because I believe that desserts aren't just food - 
             they're memories waiting to happen.
           </p>
           <div className="grid grid-cols-3 gap-6 pt-4">
@@ -60,7 +60,7 @@ const About = () => (
         <h2 className="heading-lg mb-12">What We Stand For</h2>
         <div className="grid md:grid-cols-3 gap-8 text-left">
           {[
-            { title: "Quality First", text: "We use only premium, ethically-sourced ingredients. Real butter, Belgian chocolate, fresh fruits — no artificial anything." },
+            { title: "Quality First", text: "We use only premium, ethically-sourced ingredients. Real butter, Belgian chocolate, fresh fruits - no artificial anything." },
             { title: "Design Matters", text: "Every cake is a canvas. We treat design with the same care as taste, creating pieces that are as beautiful as they are delicious." },
             { title: "Personal Touch", text: "We're not a factory. Every order gets our full attention, care, and a personal touch that makes it uniquely yours." },
           ].map((val) => (

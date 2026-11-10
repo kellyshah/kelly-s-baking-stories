@@ -30,7 +30,7 @@ const CustomOrders = () => {
             <h1 className="heading-xl mb-6">Your Dream Cake, Made Real</h1>
             <p className="body-text mb-8">
               Have a specific design in mind? Whether it's a whimsical birthday cake, an elegant 
-              wedding centrepiece, or a themed dessert table — we bring your vision to life with 
+              wedding centrepiece, or a themed dessert table - we bring your vision to life with 
               precision and love.
             </p>
             <a
