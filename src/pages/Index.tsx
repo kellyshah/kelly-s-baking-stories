@@ -85,19 +85,19 @@ const Index = () => {
       <section className="relative min-h-[90vh] flex items-center">
         <div className="container-narrow w-full px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-up">
-            <p className="font-serif text-base italic text-muted-foreground tracking-wide">
+            <p className="caption-text text-primary">International Recognition</p>
+            <h1 className="font-serif text-4xl sm:text-5xl leading-tight text-foreground max-w-xl">
               Two-time International Award Winner
-            </p>
-            <h1 className="heading-xl">
-              Crafting stories,<br />
-              <em className="text-primary">one cake at a time.</em>
             </h1>
-            <div className="space-y-1.5 max-w-md">
+            <p className="font-serif text-2xl sm:text-3xl italic text-primary leading-snug max-w-lg">
+              Healthy Treats Category, Cakeology 2025 & 2026
+            </p>
+            <div className="space-y-2 max-w-md">
+              <h2 className="font-serif text-2xl sm:text-3xl leading-snug">
+                Crafting stories, <em className="text-primary">one cake at a time.</em>
+              </h2>
               <p className="font-serif text-base italic text-muted-foreground/80">
-                International Healthy Treats Category - Cakeology 2025 & 2026
-              </p>
-              <p className="font-serif text-base italic text-muted-foreground/80">
-                Featured: Recipe of the Year - Rising Star India Magazine
+                Featured: Recipe of the Year, Rising Star India Magazine
               </p>
             </div>
             <p className="body-text max-w-md pt-2">
