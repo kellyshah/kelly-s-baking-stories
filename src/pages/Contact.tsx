@@ -55,7 +55,7 @@ const Contact = () => (
             </div>
             <div>
               <h3 className="font-serif text-lg mb-1">Location</h3>
-              <p className="body-text text-sm">Mohini Tower, Bodakdev, Ahmedabad</p>
+              <p className="body-text text-sm">Savita Govind Plaza, Bodakdev, Ahmedabad 380054</p>
               <p className="body-text text-sm">Delivery available across Ahmedabad</p>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Contact = () => (
         <div className="rounded-2xl overflow-hidden border border-border/50 min-h-[400px]">
           <iframe
             title="Kelly's Baking Stories Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.70717962575!2d72.43965!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=Savita+Govind+Plaza,+Bodakdev,+Ahmedabad+380054&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0, minHeight: 400 }}

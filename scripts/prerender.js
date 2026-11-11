@@ -34,6 +34,7 @@ const BAKERY_SCHEMA = {
   "telephone": "+91-8799055079",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Savita Govind Plaza, Bodakdev",
     "addressLocality": "Ahmedabad",
     "addressRegion": "Gujarat",
     "postalCode": "380054",
