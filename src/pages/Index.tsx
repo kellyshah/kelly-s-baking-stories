@@ -86,7 +86,7 @@ const Index = () => {
         <div className="container-narrow w-full px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-up">
             <p className="font-serif text-base italic text-muted-foreground tracking-wide">
-              Award-winning baker
+              Two-time International Award Winner
             </p>
             <h1 className="heading-xl">
               Crafting stories,<br />
@@ -94,7 +94,7 @@ const Index = () => {
             </h1>
             <div className="space-y-1.5 max-w-md">
               <p className="font-serif text-base italic text-muted-foreground/80">
-                Recognized for Healthy Treats - Cakeology Awards
+                International Healthy Treats Category - Cakeology 2025 & 2026
               </p>
               <p className="font-serif text-base italic text-muted-foreground/80">
                 Featured: Recipe of the Year - Rising Star India Magazine
